@@ -1,0 +1,70 @@
+%%Identification
+%%The package identifies itself and the LaTeX version needed
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{Format}[2014/08/21 Example package]
+
+%To use the command \today
+\RequirePackage[useregional]{datetime2} 
+
+%Define the boundarys and the general geometry. More info and changes: http://texdoc.net/texmf-dist/doc/latex/geometry/geometry.pdf
+\RequirePackage[left=23mm,right=23mm,top=40mm,bottom=30mm]{geometry} 
+
+%Use lists
+\RequirePackage{enumerate}
+
+%Math package 
+\RequirePackage{amsmath} 
+
+%Put text around images https://ondahostil.wordpress.com/2017/06/07/lo-que-he-aprendido-wrapfig/
+\RequirePackage{wrapfig}
+
+%Split text in columns https://osl.ugr.es/CTAN/macros/latex/required/tools/multicol.pdf
+\RequirePackage{multicol}
+
+%Execute commands after the next page break https://ctan.org/pkg/afterpage
+\RequirePackage{afterpage}
+
+%Be able to include graphics https://ctan.org/pkg/graphicx
+\RequirePackage{graphicx}
+
+%Allows to use colors in text https://en.wikibooks.org/wiki/LaTeX/Colors
+\RequirePackage{xcolor}
+
+%Generic symbols for both text and math mode https://ctan.org/pkg/gensymb
+\RequirePackage{gensymb}
+
+%Fonts
+\RequirePackage{lmodern}
+
+%Allows to define captions and use captions outside concrete enviroments
+%https://ctan.org/pkg/captdef
+\RequirePackage{captdef}
+
+%Adds functions to amsmath
+\RequirePackage{mathtools}
+
+%Improved citation handeling
+\RequirePackage{cite}
+
+%Automatically adds bibliografy/index/contents to the table of contents
+\RequirePackage[nottoc]{tocbibind}
+
+%Easily include nicely syntax highlighted m-code
+\RequirePackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+
+%Add any programming language
+%https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings
+\RequirePackage{listings}
+
+%No ho entenc massa be pero el deixo x si aca
+\RequirePackage{filecontents}
+
+\makeatletter
+\pagenumbering{gobble}
+\providecommand\add@text{}
+\newcommand\tagaddtext[1]{\gdef\add@text{#1\gdef\add@text{}}}
+\renewcommand\tagform@[1]{\maketag@@@{\llap{\add@text\quad}(\ignorespaces#1\unskip\@@italiccorr)}}
+\renewcommand{\theequation}{\arabic{equation}}
+\renewcommand{\thefigure}{\arabic{figure}}
+\renewcommand{\thetable}{\arabic{table}}
+\makeatother

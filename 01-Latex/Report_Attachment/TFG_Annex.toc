@@ -1,0 +1,11 @@
+\select@language {english}
+\contentsline {chapter}{List of Figures}{2}{chapter*.2}
+\contentsline {chapter}{List of Tables}{3}{chapter*.3}
+\contentsline {chapter}{\numberline {1}Aerodynamic design}{4}{chapter.1}
+\contentsline {section}{\numberline {1.1}Airfoil selection}{4}{section.1.1}
+\contentsline {subsubsection}{Airfoil 1: SG6040}{5}{section*.4}
+\contentsline {subsubsection}{Airfoil 2: SG6041}{6}{section*.7}
+\contentsline {subsubsection}{Airfoil 3: SG6042}{7}{section*.10}
+\contentsline {subsubsection}{Airfoil 4: SG6043}{8}{section*.13}
+\contentsline {subsubsection}{Airfoil 5: S833}{9}{section*.16}
+\contentsline {chapter}{\numberline {2}Structural design}{10}{chapter.2}

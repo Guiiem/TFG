@@ -1,0 +1,136 @@
+\documentclass[11pt, a4paper, twoside]{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} %Accents automàtics
+\usepackage[english]{babel} %Language of the text
+\usepackage[table]{xcolor}
+\definecolor{lightgray}{gray}{0.9}
+%Import the format package
+\usepackage{Format}
+\usepackage{placeins}
+
+
+\usepackage[center]{caption}
+
+
+\setlength\headheight{42pt} 
+
+\setlength{\parindent}{0em}
+
+\usepackage{pdflscape}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{adjustbox}
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
+
+%% Headers in all the pagines
+%% https://www.overleaf.com/learn/latex/Headers_and_footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\fancyhf{}
+\rhead{\fancyplain{}\rightmark} %\Thesection?
+\lhead{\includegraphics[width=5cm]{Logo_escola.png}} %Title?
+\cfoot{\thepage}
+
+\title{Glory template}
+\author{Guillem Vergés i Plaza }
+\date{October 2018}
+
+\usepackage{afterpage}
+
+\newcommand\blankpage{%
+	\null
+	\thispagestyle{empty}%
+	\addtocounter{page}{-1}%
+	\newpage}
+
+
+\let\cleardoublepage=\clearpage
+
+\usepackage{subfiles}
+
+\usepackage{hyperref}
+\usepackage{array}
+
+
+
+
+\begin{document}
+
+
+%%PORTADA---------------------------------------------------
+
+\begin{titlepage}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\center
+\includegraphics[height=2.5cm]{Logo_escola.png}\\[2cm]
+
+\textsc{\Large Bachelor's Degree in Aerospace Technology Engineering}\\[0.5cm]
+\textsc{\large Bachelor Thesis - Document: REPORT ATTACHMENT}\\[0.5cm]
+\HRule \\[0.4cm]
+{\Large \bfseries Project of designing and manufacturing a small wind turbine using fused deposition modeling technology }\\[0.1cm]
+\HRule \\[2cm]
+\large \emph{Director:}\\[0.5cm] 
+%Table with the surnames alligned if necessary
+Francesc Xavier \textsc{Sanz Cano}\\
+[1cm]
+\large \emph{Co-Director:}\\[0.5cm] 
+%Table with the surnames alligned if necessary
+Álvaro \textsc{Luna Alloza}\\
+[1.5cm]
+\large \emph{Autor:}\\[0.5cm] 
+%Table with the surnames alligned if necessary
+Guillem \textsc{Vergés i Plaza}\\
+[1cm]
+\vfill
+
+
+\afterpage{\blankpage}
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Delivery date:}\\[0.2cm] 00-00-0000
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Presentation date:}\\[0.2cm] 28-10-2018
+\end{flushright}
+\end{minipage}
+\end{titlepage}
+
+%Define the size the pages will have
+\newgeometry{inner=25mm,outer=25mm,top=35mm,bottom=30mm}
+
+
+
+
+\newpage
+
+\pagenumbering{arabic}
+
+\tableofcontents
+\listoffigures
+\listoftables
+\newpage
+
+
+
+
+\chapter{Aerodynamic design}
+
+\section{Airfoil selection}
+\subfile{Aero_design/ATTACH_Aero_Design}
+
+
+\chapter{Structural design}
+
+
+\end{document}
