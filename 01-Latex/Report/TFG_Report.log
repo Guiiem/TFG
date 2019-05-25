@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.8)  20 MAY 2019 23:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.8)  20 MAY 2019 23:37
 entering extended mode
 **./TFG_Report.tex
 (TFG_Report.tex
@@ -1614,22 +1614,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--119
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 178.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
 File: Logo_escola.png Graphic file (type png)
  <use Logo_escola.png>
-Package pdftex.def Info: Logo_escola.png used on input line 178.
+Package pdftex.def Info: Logo_escola.png used on input line 180.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
  [19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 178.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
  (TFG_Report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 178.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 178.
-Package rerunfilecheck Info: File `TFG_Report.out' has not changed.
-(rerunfilecheck)             Checksum: 69C3EBF73B6F237464BABDABD5434EBE;2151.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
+
+
+Package rerunfilecheck Warning: File `TFG_Report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `TFG_Report.out':
+(rerunfilecheck)             Before: 69C3EBF73B6F237464BABDABD5434EBE;2151
+(rerunfilecheck)             After:  095595D708CE3D500D4BCE19E8D7249F;2203.
  ) 
 Here is how much of TeX's memory you used:
- 15634 strings out of 493323
- 252090 string characters out of 3139067
+ 15635 strings out of 493323
+ 252101 string characters out of 3139067
  386467 words of memory out of 3000000
  18708 multiletter control sequences out of 15000+200000
  83256 words of font info for 63 fonts, out of 3000000 for 9000
@@ -1647,9 +1654,9 @@ iKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri1
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on TFG_Report.pdf (23 pages, 802721 bytes).
+Output written on TFG_Report.pdf (23 pages, 803269 bytes).
 PDF statistics:
- 495 PDF objects out of 1000 (max. 8388607)
- 133 named destinations out of 1000 (max. 500000)
+ 496 PDF objects out of 1000 (max. 8388607)
+ 134 named destinations out of 1000 (max. 500000)
  279 words of extra memory for PDF output out of 10000 (max. 10000000)
 
