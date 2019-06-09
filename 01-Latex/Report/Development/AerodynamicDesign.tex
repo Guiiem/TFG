@@ -95,23 +95,52 @@ The following table summarizes the airfoils that will be tested and studied. The
 
 The following parameters will be analyzed for each airfoil:
 
-%%JUSTIFICAR CADA PARÀMETRE
+
 
 \begin{enumerate}
-	\item Maximum efficiency $E$: 
-	\item $\Delta \alpha=\alpha_{s}-\alpha_{opt}$: 
-	\item $\dfrac{d\alpha_{opt}}{dRe}$:
-	\item $\dfrac{dE}{dRe}$:
-	\item $\dfrac{dE}{d \alpha} (\alpha=\alpha_{opt})$
-	\item Thickness $t/c$:
-	\item $Cl_{opt}$: 
+	\item Maximum efficiency $E$: An airfoil that produces the more lift possible with the minimum drag is desired. 
+	\item $\Delta \alpha=\alpha_{s}-\alpha_{opt}$: It is important to have the optimum angle of attack far from the stall angle of attack, as this provides consistency to the design. 
+	\item $\dfrac{d\alpha_{opt}}{dRe}$: The Reynolds range that the airfoil will work at makes desirable to have uniformity in the optimal operating point. Hence, the lower variation of its location is searched. 
+	\item $\dfrac{dE}{dRe}$: The same reason than the previous point. 
+	\item $\dfrac{dE}{d \alpha} (\alpha=\alpha_{opt})$: This parameter is also studied in order to provide consistency. Variations of $\alpha$ should not lead to huge changes in the efficiency. 
+	\item Thickness $t/c$: The thicker the airfoil, the more structural resistance it has. Usually the thicnkess is a compromise between the aerodynamic performance and the structural perspective. 
+	\item $Cl_{opt}$: Load parameter. It is a generic indicator of the loads it would generate to a given operating point. 
 	
 \end{enumerate}
 
+An explanation of how the data have been extracted from each airfoil can be found in the section \ref{RA_Aero_Design} of the Report Attachment. The polar curves and data from each airfoil is also presented there with more detail. The results are summarized in the following table: 
 
 
+\begin{table}[]
+	\centering
+	\rowcolors{5}{}{lightgray}
+		\caption{Airfoil selection decision table. Results obtained for each option.}
+	\label{tab:my-table}
+	\begin{tabular}{cc|C{1.5cm}|C{1.5cm}|C{1.75cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.3cm}}
+		&         & \multicolumn{7}{c}{Parameters}                                                      \\\cline{3-9}
+		&         & 1     & 2       & 3                            & 4      & 5     & 6         & 7     \\ 
+		\multirow{-3}{*}{Nº} & \multirow{-3}{*}{Airfoil}  & $E_{max}$ & $\alpha_{s}-\alpha_{opt}$ & $d\alpha_{opt}/dRe$ & $dE/dRe$ & $dE/d\alpha$ & $(t/c)_{max}$ & $Cl_{opt}$ \\ \hline
+		1          & SG6040  & 44.11 & 10.81   & 0.55                         & 9.86   & 4.66  & 16.00     & 0.87  \\
+		2          & SG6041  & 42.46 & 6.02    & 0.36                         & 7.50   & 2.14  & 10.00     & 0.89  \\
+		3          & SG6042  & 48.89 & 9.24    & 0.64 & 8.01   & 2.57  & 10.00     & 0.85  \\
+		4          & SG6043  & 57.73 & 10.96   & 0.94                         & 11.87  & 5.59  & 10.00     & 0.97  \\
+		5          & S833    & 31.13 & 8.59    & 0.69                         & 6.32   & 1.32  & 18.00     & 0.75  \\
+		6          & S834    & 32.30 & 7.62    & 0.33                         & 5.96   & 1.32  & 15.00     & 0.69  \\
+		7          & S835    & 27.96 & 10.03   & 0.60                         & 6.00   & 1.97  & 21.00     & 0.67  \\
+		8          & S1210   & 62.47 & 6.32    & 0.31                         & 12.13  & 4.80  & 12.00     & 1.40  \\
+		9          & S1223   & 55.67 & 5.63    & 0.37                         & 10.55  & 1.44  & 12.10     & 1.52  \\
+		10         & S6063   & 36.78 & 3.89    & 0.18                         & 5.36   & 5.57  & 7.00      & 0.67  \\
+		11         & S9037   & 50.95 & 6.57    & 0.09                         & 8.55   & 2.33  & 9.00      & 0.93  \\
+		12         & S3010   & 48.35 & 5.97    & 0.07                         & 8.59   & 2.45  & 10.30     & 0.94  \\
+		13         & SD8000  & 42.76 & 5.35    & 0.06                         & 7.24   & 2.15  & 8.90      & 0.84  \\
+		14         & BW3     & 45.99 & 6.27    & 0.49                         & 5.89   & 2.96  & 5.00      & 1.08  \\
+		15         & E387    & 56.17 & 6.85    & 0.66                         & 10.42  & 9.22  & 9.10      & 0.89  \\
+		16         & E374    & 44.81 & 7.98    & 0.56                         & 7.04   & 6.69  & 10.90     & 0.71  \\
+		17         & E62     & 65.55 & 7.02    & 0.72                         & 11.70  & 13.64 & 5.60      & 0.95  \\
+		18         & RG15    & 43.48 & 5.41    & 0.25                         & 6.74   & 4.66  & 8.90      & 1.83 
+	\end{tabular}
 
-
+\end{table}
 
 
 \subsection{Blades design}
