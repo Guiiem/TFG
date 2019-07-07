@@ -11,12 +11,12 @@ D = 1.5; %Rotor diameter
 Rho = 1.225;
 cmax = 0.25; %Maxchord
 cmin = 0.05; %Minchord
-N = 10; %Number of blade elements
+N = 15; %Number of blade elements
 Umax = 20; %Cut out wind speed
-twistmax = 25;
-twistmin = -5;
+twistmax = 0.1;
+twistmin = 0;
 rhub = 0.15; 
-Delta = 1e-5; %Convergence criteria
+Delta = 1e-4; %Convergence criteria
 
 %Vectors of radius, chord and twist
 Delta_r = (D/2-rhub)/N;
@@ -31,12 +31,12 @@ TGen = [0 25 50 75 100];
 OmegaGen = [0 110 200 290 400];
 
 %Rang de lambda a analitzar
-Lambda = 0.5:0.1:8;
+Lambda = 0.5:0.1:12;
 
 
 for i=1:length(Lambda)
         %De l'altre codi
-        [CP(i),CT(i)] = PowerCoef(0, twist, Lambda(i), Mu, Sigma_r, Delta, r, Delta_r, D);
+        [CP(i),CT(i),Cp(i,:)] = PowerCoef(0, twist, Lambda(i), Mu, Sigma_r, Delta, r, Delta_r, D, c, Nb);
 end
 
 %CP vs lambda

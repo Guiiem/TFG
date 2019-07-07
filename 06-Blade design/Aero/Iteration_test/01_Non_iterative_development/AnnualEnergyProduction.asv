@@ -1,0 +1,29 @@
+function AEP = AnnualEnergyProduction(Results,Data);
+
+%Generation of the wind speed vector
+Uin = Data.u_start;
+Uout = Data.u_cut_out;
+U = Uin:1:Uout;
+
+%Weibull parameters
+A = Data.Weibull_A;
+k = Data.Weibull_k;
+
+%Compute the probability of the Weibull distribution
+Prob = k/A.*(U/A).^(k-1).*exp(-(U/A).^k);
+
+%Express the probability in terms of hours per year
+Hours = Prob*24*365;
+
+%Energy produced for each wind speed in one year [W*h]
+E_prod = Hours*Results.P;
+
+%Numerical integration of the energy production probability
+AEP = trapz(U,E_prod);
+
+figure('Name','Energy produced 
+
+
+
+
+end

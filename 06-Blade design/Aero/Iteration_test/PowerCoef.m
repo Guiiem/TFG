@@ -1,20 +1,23 @@
-function [CP,CT] = PowerCoef(theta, tau, lambda, mu, cs, delta, r, Delta_r, D)
+function [CP,CT,Cp] = PowerCoef(theta, tau, lambda, mu, cs, delta, r, Delta_r, D, c, Nb)
 %PowerCoef: The power coefficient for a node will be computed for a
 %tip speed ratio and a pitch angle given. 
 
 %Start values
 a_calc = 1/3; %Start considering the optimal axial induction factor 
-a = 0; %Induction factor of the previous iteration
+a = -1/3;
 ite_max = 50; %Maximum number of iterations 
 CP = 0; %Power coefficient
 CT = 0; %Thrust coefficient
+
+torque = 0;
 
 for j=1:length(r) %We will iterate for each node
     
     for i=1:ite_max
 
         %Induction factors
-        a = abs(a-a_calc); %Average for the new iteration
+        a = abs(a-a_calc)*0.5; %Average for the new iteration if the previous value is acceptable
+        
         if i==1
             ap_calc = a_calc*(1-a_calc)/(lambda^2 * mu(j)^2); %Computation of the tangencial induction factor
         end
@@ -37,18 +40,49 @@ for j=1:length(r) %We will iterate for each node
 
         %Check the convergency 
 
-        if(abs(a_calc-a) < delta && i>2)            
+        if(abs(a_calc-a) < delta && i>2) 
+            i
             break;
         end
     end
 
     a = a_calc; 
-
-    Cp = 4*a*(1-a)^2; % Coefficient of power of the node
-    CP = CP + Cp * (2*pi*r(j)*Delta_r) / (pi*(D/2)^2); % Total coefficient of power
+    ap = ap_calc;
+    
+    %%Nou càlcul de coefficients
+%     Ut = (1-a)/sin(phi);
+%     
+%     delthr = Nb*Ut^2*c(j)*Delta_r/pi; 
+%     deltor = delthr*r(j)*(Cl*sin(phi) - Cd*cos(phi));
+%     
+%     CT = CT + delthr;
+%     torque = torque + deltor;
+    
+    
+    
+    
+    
+    
+    
+    
+%%Vell càlcul de coefficients
+    Cp(j) = 4*a*(1-a)^2; % Coefficient of power of the node
+    
+    if (Cp(j)>16/27)
+        Cp (j) = 0.005;
+    end
+    
+    if (Cp(j)<0)
+        Cp(j) = 0;
+    end
+        
+    CP = CP + Cp(j) * (2*pi*r(j)*Delta_r) / (pi*(D/2)^2); % Total coefficient of power
     
     Ct = 4*a*(1-a); %Coefficient of thrust of the node
     CT = CT + Ct * (2*pi*r(j)*Delta_r) / (pi*(D/2)^2); % Total coefficient of thrust
 end
+
+% CP = torque*lambda;
+
 end
 
