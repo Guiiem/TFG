@@ -9,7 +9,7 @@
 In this section, the selection of the airfoils for the blades will be made. First, the desired characteristics will be defined. The low Reynolds influence will be described, and a study methodology will be chosen according to it. Then, several existing airfoils will be selected to be studied and a selection criteria will be detailed.Finally, the elected airfoil will be characterized. 
 
 
-\subsubsection{Desired characteristics}
+\subsubsection*{Desired characteristics}
 
 The desired performance of the blades varies from root to tip. The optimal solution would be to have blades with aerodynamic twist and adapt the airfoil selection to the different circumstances of each section of the blade. However, this would difficult the optimization of the chord and geometric twist distribution, so only one airfoil will be selected. \\
 
@@ -25,7 +25,7 @@ This selection is a compromise between aerodynamic and structural issues. Usuall
 	\item Insensitive to dirt (turbulent airfoils are more resistant). 
 \end{enumerate}
 
-\subsubsection{Low Reynolds number and simulation parameters }
+\subsubsection*{Low Reynolds number and simulation parameters }
 
 The Reynolds number in a small wind turbine is defined as:
 
@@ -59,7 +59,7 @@ The airfoils will be studied using XFOIL sofware with XFLR5 graphical user inter
 
 %It is known that lift and drag coefficients depend on the Reynolds number. Although computational analysis is very used for airfoil study, there are authors that state these results can not be completely trusted at low Re \cite{Wood}. There is also low accurate experimental data available for these cases ($Re<10^5$) due to the small forces involved. In order to reduce uncertainties and ensure veracity of the data used, this design will be limited to a little amount of well-studied airfoils designed specifically for small wind turbines. 
 
-\subsubsection{Airfoils studied}
+\subsubsection*{Airfoils studied}
 
 The following table summarizes the airfoils that will be tested and studied. The airfoil coordinates and the values presented below has been obtained from \textit{airfoiltools.com} \cite{Airfoiltools}, a useful website that uses UIUC's airfoil database \cite{UIUC}. All the airfoils studied have been designed looking for a good performance in low Reynolds number operation. Some of them are specifically designed for small wind turbines: SG series (Selig-Giguere) and S833/4/5 airfoils designed by NREL are probably the first aerofoils designed for this purpose \cite{Wood}. The other models have been selected by looking into low Reynolds airfoils studies \cite{fuentes2016airfoil} \cite{shah2012low}.  
 
@@ -104,7 +104,7 @@ The following parameters will be analyzed for each airfoil:
 	\item $\dfrac{dE}{dRe}$: The same reason than the previous point. 
 	\item $\dfrac{dE}{d \alpha} (\alpha=\alpha_{opt})$: This parameter is also studied in order to provide consistency. Variations of $\alpha$ should not lead to huge changes in the efficiency. 
 	\item Thickness $t/c$: The thicker the airfoil, the more structural resistance it has. Usually the thicnkess is a compromise between the aerodynamic performance and the structural perspective. 
-	\item $Cl_{opt}$: Load parameter. It is a generic indicator of the loads it would generate to a given operating point. 
+	\item $Cl_{opt}$: The higher the lift coefficient for, the smaller the chord needed.
 	
 \end{enumerate}
 
@@ -114,7 +114,7 @@ An explanation of how the data have been extracted from each airfoil can be foun
 \begin{table}[]
 	\centering
 	\rowcolors{5}{}{lightgray}
-		\caption{Airfoil selection decision table. Results obtained for each option.}
+		\caption{Airfoil selection results.}
 	\label{tab:my-table}
 	\begin{tabular}{cc|C{1.5cm}|C{1.5cm}|C{1.75cm}|C{1.5cm}|C{1.5cm}|C{1.5cm}|C{1.3cm}}
 		&         & \multicolumn{7}{c}{Parameters}                                                      \\\cline{3-9}
@@ -142,8 +142,102 @@ An explanation of how the data have been extracted from each airfoil can be foun
 
 \end{table}
 
+In order to select which airfoil will be used, the preceding table should be normalized, and each parameter should have a weight assigned. A common risk when comparing different possibilities is to select an option which stands out in a particular variable but is not the best option in average. To avoid so, a domination matrix will be used \cite{ApuntsDomMatrix}. The matrices with normalization and the domination procedure may be found in the section \ref{RA_Airfoil_Decision} of the Report Attachment.
+
+
+%FALTA POSAR BIBLIOGRAFIA DOMINATION MATRIX
+%RESULTATS SELECCIÓ AIRFOIL
+%EXPLICAR COM ÉS L'AIRFOIL TRIAT I CARACTERÍSTIQUES
+
+
 
 \subsection{Blades design}
+
+%FER INTRODUCCIÓ QUAN ESTIGUI TOT FET
+
+In this section the whole aerodynamic design of the blades will be reviewed. Firstly, the method to compute the power curve of a given blade geometry will be described. After that, different methods to optimize it will be discussed, as well as the distinctive feature that this passive solution should take into account. 
+
+%Explicar procediment: intersecció amb la corba del generador, algoritme genetic per maximitzar, codi massa lent (número de vegades que fa la BEM), simplement provar distribucions de corda i twist optima tenint en compte el Starting Time i la corda màxima. Càlcul aproximat per les unions
+
+
+\subsubsection{Power curve calculation}
+
+To be able to design the blade geometry, the first step is creating a code to obtain the power curve from a given chord, pitch and twist. These three will be the variables to be determined. With them, the goal is to maximize the Annual Energy Production (AEP) by means of the power curve. \\
+
+If a generator is selected, the curve of torque vs rotor speed $Q=f(\Omega)$ is fixed. This curve will also be the one that the wind turbine will follow. With it, it is already know how much torque the rotor will have to produce at each rotational speed in order to match the generator demand and achieve an equilibrium point. The remaining task is to compute the at which wind speed these equilibrium points are obtained. If a $\Omega = f(U_{\infty})$ function can be found, then these points can be traced into a $Q=f(U_{\infty})$ function and the desired power curve $P=f(U_{\infty})$ would be immediate to obtain. In order to do so, the following procedure has been made: 
+
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\linewidth]{Images/Power_curve_procedure_image}
+	\caption[Power curve calculation procedure]{Power curve calculation procedure. Includes the Matlab function created for each step, so the code is easier to analyze.}
+	\label{fig:PowerCurveScheme}
+\end{figure}
+
+
+
+
+\subsubsection{Initial approach and design challenge}\label{sec:design_challenge}
+
+A first study was carried out in order to see the general behavior of the wind turbine, analyze trends, and start to delimit which blade geometry may be more beneficial. To do so, a big number of chord and twist distributions were simulated. The pitch was also included, but as there is not any kind of pitch control, it is treated as a static offset to the twist. \\
+
+%Check GENERATOR SPEED!!!!!!!
+The first consideration that should be taken into account is the fact that the wind turbine will be working at a very big RPM range. The generator has a nominal rotor speed of 600 RPM, whereas a typical commercial size wind turbine (e.g. General Electric - Cypress platform) works around 10 RPM. The dimensions of them are clearly not comparable, and the reference parameter should be the tip speed ratio. This will be the focus of this study and the source of the design challenge. \\
+
+%Reference formulas to the Handbook!! Also explain how the formulas are obtained
+Both the chord and twist distribution used were obtained using the analytic formulas proposed in the section 3.7.3. of the Wind Energy Handbook by T. Burton et al. \cite{Handbook}. These expressions are analytically obtained for obtaining the optimum induction coefficients $a$ and $a'$ (and thus, maximizing the power coefficient $C_P$) for a given tip speed ratio $\lambda$. For obtaining these formulas no losses have been taken into account. Moreover, the drag has been ignored, although it is demonstrated in the section 3.7.4. that the effect of including it is indeed negligible.   %
+
+\begin{equation}\label{OptimalChord}
+c = R \dfrac{2 \pi}{\lambda N C_L} \dfrac{8/9}{\sqrt{4/9+(\lambda \mu)^2  \cdot \left( 1+\dfrac{2}{9 (\lambda \mu)^2 } \right)^2 }}
+\end{equation}
+
+\begin{equation}\label{OptimalTwist}
+\beta = \phi - \alpha = \arctan{\left(   \dfrac{2/3}{\lambda \mu \left( 1+\dfrac{2}{9 (\lambda \mu)^2}   \right)}   \right)} -\alpha
+\end{equation}
+
+%Posar valors concrets?
+The $\alpha$ is selected to get the maximum efficiency $C_L/C_D$, and the lift coefficient is given by it. For this step, this point is obtained with the average of all Reynolds number studied. The airfoil study showed that this airfoil has little angle of attack variation at different Reynolds numbers, so this selection is representative of all the operation region. For this study, different pitch variations (offset to the twist) have been applied. \\
+
+
+To have a general sense of what the optimal blade geometry for this case will look like, the procedure shown in the preceding section has been applied to all the different chord and twist distributions. Then, the Annual Energy Production (AEP) has been calculated using a Weibull wind speed distribution. The Weibull used, due to the lack of experimental data of a possible installation site, corresponds to the reference one used in the Small Wind Turbine Contest \cite{SWTContest}: $A=4.5$ m/s ($V_{ave}=4.0$ m/s) and $k=2$. The blade geometry that lead to the higher AEP has been selected, and now its characteristics are going to be analyzed. \\
+
+First, the chord and twist distribution of the selected blade geometry: 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\linewidth]{Images/Aerodynamic_Design/Chord_Twist_first}
+	\caption[First chord and twist distribution obtained]{First chord and twist distribution obtained. This distribution is optimized for a tip speed ratio of 2.8, and has a pitch offset of -36º.}
+	\label{fig:ChordTwistFirst}
+\end{figure}
+
+At first glance, it might seem abnormal the large pitch offset that is applied to the twist. The optimal twist distribution is created such that the effective angle of attack seen by the blades is always the optimal one $\alpha_{opt}$. Therefore, a big change like that is surprising. The explanation of why this is more "beneficial" from an AEP point of view will be developed after the presentation of these first results. \\
+
+
+%%Exposar resultats
+
+%%Coses que s'han vist:
+	%-Gran regim de lambda, gran regim AoA. En alguns casos surt millor treballar en la regió de post-stall (foto)
+	%-Stall quan s'acaba la intersecció -> Si Weibull es petita, no val la pena operar més enllà d'aquella U
+	%-Operem a lambdes baixes però la pala està optimizada amb lambda més gran (per la chord solidity i corda massa gran a l'arrel). Farem aproximació linel
+
+
+
+
+
+\subsubsection{Optimization procedure}
+
+
+
+
+
+
+
+
+
 	
+	
+
+
+
 	
 \end{document}

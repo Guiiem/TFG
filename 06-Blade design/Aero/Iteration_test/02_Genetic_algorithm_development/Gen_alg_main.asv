@@ -1,5 +1,0 @@
-clc
-close all
-clear variables
-
-addpath C:\Users\guill\Dropbox\TFG\06-Blade design\Aero\Iteration_test\01_Non_iterative_development;

@@ -1,9 +1,7 @@
 function AEP = AnnualEnergyProduction(Operation,Data,Plots);
 
 %Generation of the wind speed vector
-Uin = Data.u_start;
-Uout = Data.u_cut_out;
-U = Uin:1:Uout;
+U = Operation.U;
 
 %Weibull parameters
 A = Data.Weibull_A;

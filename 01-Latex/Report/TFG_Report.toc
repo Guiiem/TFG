@@ -1,42 +1,40 @@
 \select@language {english}
-\contentsline {chapter}{List of Figures}{2}{chapter*.4}
-\contentsline {chapter}{List of Tables}{3}{chapter*.5}
-\contentsline {chapter}{\numberline {1}Introduction}{4}{chapter.1}
-\contentsline {section}{\numberline {1.1}Aim}{4}{section.1.1}
-\contentsline {section}{\numberline {1.2}Scope}{4}{section.1.2}
-\contentsline {section}{\numberline {1.3}Requirements}{4}{section.1.3}
-\contentsline {section}{\numberline {1.4}Justification of the need}{4}{section.1.4}
-\contentsline {chapter}{\numberline {2}Development}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Background and review of the state of the art}{5}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}History and impact of small wind turbines}{5}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Advantages and disadvantages}{7}{subsection.2.1.2}
-\contentsline {subsubsection}{Advantages}{7}{section*.8}
-\contentsline {subsubsection}{Disadvantages}{8}{section*.9}
-\contentsline {subsection}{\numberline {2.1.3}Design solutions}{8}{subsection.2.1.3}
-\contentsline {subsubsection}{Axis orientation}{8}{section*.10}
-\contentsline {subsubsection}{Rotor position}{9}{section*.11}
-\contentsline {subsubsection}{Diffusor augmented wind turbines}{9}{section*.13}
-\contentsline {subsubsection}{Number of blades}{10}{section*.14}
-\contentsline {subsubsection}{Power control}{11}{section*.16}
-\contentsline {subsection}{\numberline {2.1.4}State of the market}{11}{subsection.2.1.4}
-\contentsline {section}{\numberline {2.2}Approach and decision on possible solutions}{13}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}General architecture}{13}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Generator selection}{13}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Design procedure}{13}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Aerodynamic design}{14}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Airfoil selection}{14}{subsection.2.3.1}
-\contentsline {subsubsection}{Desired characteristics}{14}{section*.18}
-\contentsline {subsubsection}{Low Reynolds number and simulation parameters }{14}{section*.19}
-\contentsline {subsubsection}{Airfoils studied}{15}{section*.21}
-\contentsline {subsection}{\numberline {2.3.2}Blades design}{17}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Structural design}{17}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Filament selection}{17}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Load cases}{17}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Link design and printing properties}{17}{subsection.2.4.3}
-\contentsline {chapter}{\numberline {3}Summary of the results}{18}{chapter.3}
-\contentsline {section}{\numberline {3.1}Budget summary}{18}{section.3.1}
-\contentsline {section}{\numberline {3.2}Analysis and assessment of the environmental implications}{18}{section.3.2}
-\contentsline {section}{\numberline {3.3}Future lines of work}{18}{section.3.3}
-\contentsline {section}{\numberline {3.4}Planning and programming of the next stage}{18}{section.3.4}
-\contentsline {section}{\numberline {3.5}Conclusions}{18}{section.3.5}
-\contentsline {chapter}{Bibliography}{19}{chapter*.23}
+\contentsline {chapter}{List of Figures}{3}{chapter*.4}
+\contentsline {chapter}{List of Tables}{4}{chapter*.5}
+\contentsline {chapter}{Symbols}{5}{section*.6}
+\contentsline {chapter}{\numberline {1}Introduction}{6}{chapter.1}
+\contentsline {section}{\numberline {1.1}Aim}{6}{section.1.1}
+\contentsline {section}{\numberline {1.2}Scope}{6}{section.1.2}
+\contentsline {section}{\numberline {1.3}Requirements}{6}{section.1.3}
+\contentsline {section}{\numberline {1.4}Justification of the need}{6}{section.1.4}
+\contentsline {chapter}{\numberline {2}Development}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}Background and review of the state of the art}{7}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}History and impact of small wind turbines}{7}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Advantages and disadvantages}{9}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Design solutions}{10}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}State of the market}{13}{subsection.2.1.4}
+\contentsline {section}{\numberline {2.2}Approach and decision on possible solutions}{15}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}General architecture}{15}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Design procedure}{17}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Electric design}{18}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Introduction and general architecture}{18}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Generator selection}{18}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Aerodynamic design}{19}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Airfoil selection}{19}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Blades design}{22}{subsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.2.1}Power curve calculation}{22}{subsubsection.2.4.2.1}
+\contentsline {subsubsection}{\numberline {2.4.2.2}Initial approach and design challenge}{23}{subsubsection.2.4.2.2}
+\contentsline {subsubsection}{\numberline {2.4.2.3}Optimization procedure}{25}{subsubsection.2.4.2.3}
+\contentsline {section}{\numberline {2.5}Structural design}{25}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}3D printing previous considerations}{25}{subsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.1.1}Printer characteristics}{25}{subsubsection.2.5.1.1}
+\contentsline {subsubsection}{\numberline {2.5.1.2}Filament selection}{25}{subsubsection.2.5.1.2}
+\contentsline {subsection}{\numberline {2.5.2}Load cases}{25}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Link design and printing properties}{25}{subsection.2.5.3}
+\contentsline {chapter}{\numberline {3}Summary of the results}{26}{chapter.3}
+\contentsline {section}{\numberline {3.1}Budget summary}{26}{section.3.1}
+\contentsline {section}{\numberline {3.2}Analysis and assessment of the environmental implications}{26}{section.3.2}
+\contentsline {section}{\numberline {3.3}Future lines of work}{26}{section.3.3}
+\contentsline {section}{\numberline {3.4}Planning and programming of the next stage}{26}{section.3.4}
+\contentsline {section}{\numberline {3.5}Conclusions}{26}{section.3.5}
+\contentsline {chapter}{Bibliography}{27}{chapter*.28}

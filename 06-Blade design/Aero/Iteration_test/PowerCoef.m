@@ -1,6 +1,17 @@
-function [CP,CT,Cp] = PowerCoef(theta, tau, lambda, mu, cs, delta, r, Delta_r, D, c, Nb)
+function [CP,CT,Cp] = PowerCoef(Data,Chord,Twist)
 %PowerCoef: The power coefficient for a node will be computed for a
 %tip speed ratio and a pitch angle given. 
+
+lambda = Data.lambda_power;
+tau = Twist;
+theta = 0;
+mu = Data.rad;
+Nb = Data.numb;
+cs = 0.5/pi*Numb*Chord./mu; %Local solidity
+D = Data.r_tip*2; %Rotor diameter
+r = mu*D/2; %Radial positions
+Delta_r = r(2)-r(1);
+delta = 5.e-3;
 
 %Start values
 a_calc = 1/3; %Start considering the optimal axial induction factor 

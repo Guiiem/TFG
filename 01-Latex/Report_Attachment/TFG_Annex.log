@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.8)  9 JUN 2019 12:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.8)  27 JUL 2019 18:52
 entering extended mode
 **./TFG_Annex.tex
 (TFG_Annex.tex
@@ -1119,7 +1119,17 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip68
 )
-(TFG_Annex.aux)
+("C:\Program Files\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip69
+\multirow@cntb=\count148
+\multirow@dima=\skip70
+\bigstrutjot=\dimen171
+) (TFG_Annex.aux
+
+LaTeX Warning: Label `tab:my-table' multiply defined.
+
+)
 \openout1 = `TFG_Annex.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
@@ -1149,16 +1159,16 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (C:\Users\guill\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count148
-\scratchdimen=\dimen171
+\scratchcounter=\count149
+\scratchdimen=\dimen172
 \scratchbox=\box66
-\nofMPsegments=\count149
-\nofMParguments=\count150
+\nofMPsegments=\count150
+\nofMParguments=\count151
 \everyMPshowfont=\toks33
-\MPscratchCnt=\count151
-\MPscratchDim=\dimen172
-\MPnumerator=\count152
-\makeMPintoPDFobject=\count153
+\MPscratchCnt=\count152
+\MPscratchDim=\dimen173
+\MPnumerator=\count153
+\makeMPintoPDFobject=\count154
 \everyMPtoPDFconversion=\toks34
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1218,7 +1228,7 @@ erthousand on input line 65.
 LaTeX Info: Redefining \ohm on input line 65.
 Package gensymb Info: Using \textohm for \ohm on input line 65.
 Package gensymb Info: Using \textmu for \micro on input line 65.
-\c@lstlisting=\count154
+\c@lstlisting=\count155
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
@@ -1235,7 +1245,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count155
+\c@section@level=\count156
 )
 LaTeX Info: Redefining \ref on input line 65.
 LaTeX Info: Redefining \pageref on input line 65.
@@ -1246,7 +1256,7 @@ LaTeX Info: Redefining \nameref on input line 65.
 \openout3 = `TFG_Annex.out'.
 
 
-<Logo_escola.png, id=23, 640.3925pt x 170.6375pt>
+<Logo_escola.png, id=31, 640.3925pt x 170.6375pt>
 File: Logo_escola.png Graphic file (type png)
  <use Logo_escola.png>
 Package pdftex.def Info: Logo_escola.png used on input line 73.
@@ -1365,269 +1375,288 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 [4
 
 ]
-<"../../04-Airfoil selection/Imatges airfoils/1-SG6040".png, id=146, 985.88326p
+<"../../04-Airfoil selection/Imatges airfoils/1-SG6040".png, id=160, 985.88326p
 t x 563.706pt>
 File: "../../04-Airfoil selection/Imatges airfoils/1-SG6040".png Graphic file (
 type png)
 
 <use "../../04-Airfoil selection/Imatges airfoils/1-SG6040".png>
 Package pdftex.def Info: "../../04-Airfoil selection/Imatges airfoils/1-SG6040"
-.png used on input line 34.
+.png used on input line 36.
 (pdftex.def)             Requested size: 455.24411pt x 260.29707pt.
 File: Logo_escola.png Graphic file (type png)
 
 <use Logo_escola.png>
-Package pdftex.def Info: Logo_escola.png used on input line 56.
+Package pdftex.def Info: Logo_escola.png used on input line 58.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
  [5 <../../04-Airfoil selection/Imatges airfoils/1-SG6040.png>]
-<"../../04-Airfoil selection/Imatges airfoils/2-SG6041".png, id=154, 985.88326p
+<"../../04-Airfoil selection/Imatges airfoils/2-SG6041".png, id=168, 985.88326p
 t x 563.706pt>
 File: "../../04-Airfoil selection/Imatges airfoils/2-SG6041".png Graphic file (
 type png)
 
 <use "../../04-Airfoil selection/Imatges airfoils/2-SG6041".png>
 Package pdftex.def Info: "../../04-Airfoil selection/Imatges airfoils/2-SG6041"
-.png used on input line 62.
+.png used on input line 64.
 (pdftex.def)             Requested size: 455.24411pt x 260.29707pt.
 File: Logo_escola.png Graphic file (type png)
 
 <use Logo_escola.png>
-Package pdftex.def Info: Logo_escola.png used on input line 86.
+Package pdftex.def Info: Logo_escola.png used on input line 88.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
  [6 <../../04-Airfoil selection/Imatges airfoils/2-SG6041.png>]
-<"../../04-Airfoil selection/Imatges airfoils/3-SG6042".png, id=161, 985.88326p
+<"../../04-Airfoil selection/Imatges airfoils/3-SG6042".png, id=175, 985.88326p
 t x 563.706pt>
 File: "../../04-Airfoil selection/Imatges airfoils/3-SG6042".png Graphic file (
 type png)
 
 <use "../../04-Airfoil selection/Imatges airfoils/3-SG6042".png>
 Package pdftex.def Info: "../../04-Airfoil selection/Imatges airfoils/3-SG6042"
-.png used on input line 92.
+.png used on input line 94.
 (pdftex.def)             Requested size: 455.24411pt x 260.29707pt.
 File: Logo_escola.png Graphic file (type png)
 
 <use Logo_escola.png>
-Package pdftex.def Info: Logo_escola.png used on input line 118.
+Package pdftex.def Info: Logo_escola.png used on input line 120.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
  [7 <../../04-Airfoil selection/Imatges airfoils/3-SG6042.png>]
-<"../../04-Airfoil selection/Imatges airfoils/4-SG6043".png, id=168, 985.88326p
+<"../../04-Airfoil selection/Imatges airfoils/4-SG6043".png, id=182, 985.88326p
 t x 563.706pt>
 File: "../../04-Airfoil selection/Imatges airfoils/4-SG6043".png Graphic file (
 type png)
 
 <use "../../04-Airfoil selection/Imatges airfoils/4-SG6043".png>
 Package pdftex.def Info: "../../04-Airfoil selection/Imatges airfoils/4-SG6043"
-.png used on input line 124.
+.png used on input line 126.
 (pdftex.def)             Requested size: 455.24411pt x 260.29707pt.
 File: Logo_escola.png Graphic file (type png)
 
 <use Logo_escola.png>
-Package pdftex.def Info: Logo_escola.png used on input line 147.
+Package pdftex.def Info: Logo_escola.png used on input line 149.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
  [8 <../../04-Airfoil selection/Imatges airfoils/4-SG6043.png>]
-<"../../04-Airfoil selection/Imatges airfoils/5-S833".png, id=175, 985.88326pt 
+<"../../04-Airfoil selection/Imatges airfoils/5-S833".png, id=189, 985.88326pt 
 x 563.706pt>
 File: "../../04-Airfoil selection/Imatges airfoils/5-S833".png Graphic file (ty
 pe png)
  <use "../../04-Airfoil selection/Imatges airfoils/5-S833".png>
 Package pdftex.def Info: "../../04-Airfoil selection/Imatges airfoils/5-S833".p
-ng used on input line 153.
+ng used on input line 155.
 (pdftex.def)             Requested size: 455.24411pt x 260.29707pt.
 File: Logo_escola.png Graphic file (type png)
 
 <use Logo_escola.png>
-Package pdftex.def Info: Logo_escola.png used on input line 176.
+Package pdftex.def Info: Logo_escola.png used on input line 178.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
  [9 <../../04-Airfoil selection/Imatges airfoils/5-S833.png>]
-<"../../04-Airfoil selection/Imatges airfoils/6-S834".png, id=182, 985.88326pt 
+<"../../04-Airfoil selection/Imatges airfoils/6-S834".png, id=196, 985.88326pt 
 x 563.706pt>
 File: "../../04-Airfoil selection/Imatges airfoils/6-S834".png Graphic file (ty
 pe png)
  <use "../../04-Airfoil selection/Imatges airfoils/6-S834".png>
 Package pdftex.def Info: "../../04-Airfoil selection/Imatges airfoils/6-S834".p
-ng used on input line 182.
+ng used on input line 184.
 (pdftex.def)             Requested size: 455.24411pt x 260.29707pt.
 File: Logo_escola.png Graphic file (type png)
 
 <use Logo_escola.png>
-Package pdftex.def Info: Logo_escola.png used on input line 210.
+Package pdftex.def Info: Logo_escola.png used on input line 212.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
  [10 <../../04-Airfoil selection/Imatges airfoils/6-S834.png>]
-<"../../04-Airfoil selection/Imatges airfoils/7-S835".png, id=189, 985.88326pt 
+<"../../04-Airfoil selection/Imatges airfoils/7-S835".png, id=203, 985.88326pt 
 x 563.706pt>
 File: "../../04-Airfoil selection/Imatges airfoils/7-S835".png Graphic file (ty
 pe png)
  <use "../../04-Airfoil selection/Imatges airfoils/7-S835".png>
 Package pdftex.def Info: "../../04-Airfoil selection/Imatges airfoils/7-S835".p
-ng used on input line 215.
+ng used on input line 217.
 (pdftex.def)             Requested size: 455.24411pt x 260.29707pt.
 File: Logo_escola.png Graphic file (type png)
 
 <use Logo_escola.png>
-Package pdftex.def Info: Logo_escola.png used on input line 239.
+Package pdftex.def Info: Logo_escola.png used on input line 241.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
  [11 <../../04-Airfoil selection/Imatges airfoils/7-S835.png>]
-<"../../04-Airfoil selection/Imatges airfoils/8-S1210".png, id=197, 985.88326pt
+<"../../04-Airfoil selection/Imatges airfoils/8-S1210".png, id=211, 985.88326pt
  x 563.706pt>
 File: "../../04-Airfoil selection/Imatges airfoils/8-S1210".png Graphic file (t
 ype png)
  <use "../../04-Airfoil selection/Imatges airfoils/8-S1210".png>
 Package pdftex.def Info: "../../04-Airfoil selection/Imatges airfoils/8-S1210".
-png used on input line 244.
+png used on input line 246.
 (pdftex.def)             Requested size: 455.24411pt x 260.29707pt.
 File: Logo_escola.png Graphic file (type png)
 
 <use Logo_escola.png>
-Package pdftex.def Info: Logo_escola.png used on input line 267.
+Package pdftex.def Info: Logo_escola.png used on input line 269.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
  [12 <../../04-Airfoil selection/Imatges airfoils/8-S1210.png>]
-<"../../04-Airfoil selection/Imatges airfoils/9-S1223".png, id=204, 985.88326pt
+<"../../04-Airfoil selection/Imatges airfoils/9-S1223".png, id=218, 985.88326pt
  x 563.706pt>
 File: "../../04-Airfoil selection/Imatges airfoils/9-S1223".png Graphic file (t
 ype png)
  <use "../../04-Airfoil selection/Imatges airfoils/9-S1223".png>
 Package pdftex.def Info: "../../04-Airfoil selection/Imatges airfoils/9-S1223".
-png used on input line 272.
+png used on input line 274.
 (pdftex.def)             Requested size: 455.24411pt x 260.29707pt.
 File: Logo_escola.png Graphic file (type png)
 
 <use Logo_escola.png>
-Package pdftex.def Info: Logo_escola.png used on input line 300.
+Package pdftex.def Info: Logo_escola.png used on input line 302.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
  [13 <../../04-Airfoil selection/Imatges airfoils/9-S1223.png>]
-<"../../04-Airfoil selection/Imatges airfoils/10-S6063".png, id=211, 985.88326p
+<"../../04-Airfoil selection/Imatges airfoils/10-S6063".png, id=225, 985.88326p
 t x 563.706pt>
 File: "../../04-Airfoil selection/Imatges airfoils/10-S6063".png Graphic file (
 type png)
 
 <use "../../04-Airfoil selection/Imatges airfoils/10-S6063".png>
 Package pdftex.def Info: "../../04-Airfoil selection/Imatges airfoils/10-S6063"
-.png used on input line 307.
+.png used on input line 309.
 (pdftex.def)             Requested size: 455.24411pt x 260.29707pt.
 File: Logo_escola.png Graphic file (type png)
 
 <use Logo_escola.png>
-Package pdftex.def Info: Logo_escola.png used on input line 334.
+Package pdftex.def Info: Logo_escola.png used on input line 336.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
  [14 <../../04-Airfoil selection/Imatges airfoils/10-S6063.png>]
-<"../../04-Airfoil selection/Imatges airfoils/11-S9037".png, id=218, 985.88326p
+<"../../04-Airfoil selection/Imatges airfoils/11-S9037".png, id=232, 985.88326p
 t x 563.706pt>
 File: "../../04-Airfoil selection/Imatges airfoils/11-S9037".png Graphic file (
 type png)
 
 <use "../../04-Airfoil selection/Imatges airfoils/11-S9037".png>
 Package pdftex.def Info: "../../04-Airfoil selection/Imatges airfoils/11-S9037"
-.png used on input line 340.
+.png used on input line 342.
 (pdftex.def)             Requested size: 455.24411pt x 260.29707pt.
 File: Logo_escola.png Graphic file (type png)
 
 <use Logo_escola.png>
-Package pdftex.def Info: Logo_escola.png used on input line 366.
+Package pdftex.def Info: Logo_escola.png used on input line 368.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
  [15 <../../04-Airfoil selection/Imatges airfoils/11-S9037.png>]
-<"../../04-Airfoil selection/Imatges airfoils/12-S3010".png, id=225, 985.88326p
+<"../../04-Airfoil selection/Imatges airfoils/12-S3010".png, id=239, 985.88326p
 t x 563.706pt>
 File: "../../04-Airfoil selection/Imatges airfoils/12-S3010".png Graphic file (
 type png)
 
 <use "../../04-Airfoil selection/Imatges airfoils/12-S3010".png>
 Package pdftex.def Info: "../../04-Airfoil selection/Imatges airfoils/12-S3010"
-.png used on input line 372.
+.png used on input line 374.
 (pdftex.def)             Requested size: 455.24411pt x 260.29707pt.
 File: Logo_escola.png Graphic file (type png)
 
 <use Logo_escola.png>
-Package pdftex.def Info: Logo_escola.png used on input line 398.
+Package pdftex.def Info: Logo_escola.png used on input line 400.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
  [16 <../../04-Airfoil selection/Imatges airfoils/12-S3010.png>]
-<"../../04-Airfoil selection/Imatges airfoils/13-SD8000".png, id=232, 985.88326
+<"../../04-Airfoil selection/Imatges airfoils/13-SD8000".png, id=246, 985.88326
 pt x 563.706pt>
 File: "../../04-Airfoil selection/Imatges airfoils/13-SD8000".png Graphic file 
 (type png)
 
 <use "../../04-Airfoil selection/Imatges airfoils/13-SD8000".png>
 Package pdftex.def Info: "../../04-Airfoil selection/Imatges airfoils/13-SD8000
-".png used on input line 404.
+".png used on input line 406.
 (pdftex.def)             Requested size: 455.24411pt x 260.29707pt.
 File: Logo_escola.png Graphic file (type png)
 
 <use Logo_escola.png>
-Package pdftex.def Info: Logo_escola.png used on input line 429.
+Package pdftex.def Info: Logo_escola.png used on input line 431.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
  [17 <../../04-Airfoil selection/Imatges airfoils/13-SD8000.png>]
-<"../../04-Airfoil selection/Imatges airfoils/14-BW3".png, id=240, 985.88326pt 
+<"../../04-Airfoil selection/Imatges airfoils/14-BW3".png, id=254, 985.88326pt 
 x 563.706pt>
 File: "../../04-Airfoil selection/Imatges airfoils/14-BW3".png Graphic file (ty
 pe png)
  <use "../../04-Airfoil selection/Imatges airfoils/14-BW3".png>
 Package pdftex.def Info: "../../04-Airfoil selection/Imatges airfoils/14-BW3".p
-ng used on input line 435.
+ng used on input line 437.
 (pdftex.def)             Requested size: 455.24411pt x 260.29707pt.
 File: Logo_escola.png Graphic file (type png)
 
 <use Logo_escola.png>
-Package pdftex.def Info: Logo_escola.png used on input line 460.
+Package pdftex.def Info: Logo_escola.png used on input line 462.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
  [18 <../../04-Airfoil selection/Imatges airfoils/14-BW3.png>]
-<"../../04-Airfoil selection/Imatges airfoils/15-E387".png, id=247, 985.88326pt
+<"../../04-Airfoil selection/Imatges airfoils/15-E387".png, id=261, 985.88326pt
  x 563.706pt>
 File: "../../04-Airfoil selection/Imatges airfoils/15-E387".png Graphic file (t
 ype png)
  <use "../../04-Airfoil selection/Imatges airfoils/15-E387".png>
 Package pdftex.def Info: "../../04-Airfoil selection/Imatges airfoils/15-E387".
-png used on input line 465.
+png used on input line 467.
 (pdftex.def)             Requested size: 455.24411pt x 260.29707pt.
 File: Logo_escola.png Graphic file (type png)
 
 <use Logo_escola.png>
-Package pdftex.def Info: Logo_escola.png used on input line 489.
+Package pdftex.def Info: Logo_escola.png used on input line 491.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
  [19 <../../04-Airfoil selection/Imatges airfoils/15-E387.png>]
-<"../../04-Airfoil selection/Imatges airfoils/16-E374".png, id=254, 976.24725pt
+<"../../04-Airfoil selection/Imatges airfoils/16-E374".png, id=268, 976.24725pt
  x 548.0475pt>
 File: "../../04-Airfoil selection/Imatges airfoils/16-E374".png Graphic file (t
 ype png)
  <use "../../04-Airfoil selection/Imatges airfoils/16-E374".png>
 Package pdftex.def Info: "../../04-Airfoil selection/Imatges airfoils/16-E374".
-png used on input line 495.
+png used on input line 497.
 (pdftex.def)             Requested size: 455.24411pt x 255.56699pt.
 File: Logo_escola.png Graphic file (type png)
 
 <use Logo_escola.png>
-Package pdftex.def Info: Logo_escola.png used on input line 519.
+Package pdftex.def Info: Logo_escola.png used on input line 521.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
  [20 <../../04-Airfoil selection/Imatges airfoils/16-E374.png>]
-<"../../04-Airfoil selection/Imatges airfoils/17-E62".png, id=261, 976.24725pt 
+<"../../04-Airfoil selection/Imatges airfoils/17-E62".png, id=275, 976.24725pt 
 x 548.0475pt>
 File: "../../04-Airfoil selection/Imatges airfoils/17-E62".png Graphic file (ty
 pe png)
  <use "../../04-Airfoil selection/Imatges airfoils/17-E62".png>
 Package pdftex.def Info: "../../04-Airfoil selection/Imatges airfoils/17-E62".p
-ng used on input line 525.
+ng used on input line 527.
 (pdftex.def)             Requested size: 455.24411pt x 255.56699pt.
 File: Logo_escola.png Graphic file (type png)
 
 <use Logo_escola.png>
-Package pdftex.def Info: Logo_escola.png used on input line 550.
+Package pdftex.def Info: Logo_escola.png used on input line 552.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
  [21 <../../04-Airfoil selection/Imatges airfoils/17-E62.png>]
-<"../../04-Airfoil selection/Imatges airfoils/18-RG15".png, id=268, 976.24725pt
+<"../../04-Airfoil selection/Imatges airfoils/18-RG15".png, id=282, 976.24725pt
  x 548.0475pt>
 File: "../../04-Airfoil selection/Imatges airfoils/18-RG15".png Graphic file (t
 ype png)
  <use "../../04-Airfoil selection/Imatges airfoils/18-RG15".png>
 Package pdftex.def Info: "../../04-Airfoil selection/Imatges airfoils/18-RG15".
-png used on input line 557.
+png used on input line 559.
 (pdftex.def)             Requested size: 455.24411pt x 255.56699pt.
-)
 File: Logo_escola.png Graphic file (type png)
+
 <use Logo_escola.png>
-Package pdftex.def Info: Logo_escola.png used on input line 134.
+Package pdftex.def Info: Logo_escola.png used on input line 582.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
  [22 <../../04-Airfoil selection/Imatges airfoils/18-RG15.png>]
+Overfull \hbox (5.11028pt too wide) in paragraph at lines 593--616
+ [][] 
+ []
+
+File: Logo_escola.png Graphic file (type png)
+<use Logo_escola.png>
+Package pdftex.def Info: Logo_escola.png used on input line 633.
+(pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
+ [23]
+Overfull \hbox (27.30496pt too wide) in paragraph at lines 639--661
+ [][] 
+ []
+
+)
+File: Logo_escola.png Graphic file (type png)
+ <use Logo_escola.png>
+Package pdftex.def Info: Logo_escola.png used on input line 134.
+(pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
+ [24]
 Chapter 2.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 137.
-[23
+[25
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
@@ -1635,34 +1664,40 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
 Package rerunfilecheck Info: File `TFG_Annex.out' has not changed.
-(rerunfilecheck)             Checksum: 7B3AE300EE210593AA688EF5D3021CD2;274.
+(rerunfilecheck)             Checksum: E7E0F78158F0206AA3ED532A59989616;412.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 15589 strings out of 493323
- 254409 string characters out of 3139067
- 356843 words of memory out of 3000000
- 18712 multiletter control sequences out of 15000+200000
+ 15653 strings out of 493323
+ 255399 string characters out of 3139067
+ 381503 words of memory out of 3000000
+ 18764 multiletter control sequences out of 15000+200000
  64116 words of font info for 49 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,15n,92p,835b,458s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/M
-iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
-nc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec
-.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri1
-2.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb>
-Output written on TFG_Annex.pdf (25 pages, 930216 bytes).
+ 53i,15n,92p,835b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Fil
+es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/
+enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-maths
+y.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program
+ Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/l
+m/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr1
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+lm/lmsy10.pfb>
+Output written on TFG_Annex.pdf (27 pages, 946657 bytes).
 PDF statistics:
- 339 PDF objects out of 1000 (max. 8388607)
- 92 named destinations out of 1000 (max. 500000)
- 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 372 PDF objects out of 1000 (max. 8388607)
+ 100 named destinations out of 1000 (max. 500000)
+ 152 words of extra memory for PDF output out of 10000 (max. 10000000)
 

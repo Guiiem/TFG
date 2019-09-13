@@ -1,20 +1,21 @@
-function Results = Curves(Cp,Cq,Data,lambda,Plots);
+function Results = Curves(Cp,Cq,Ct,Data,lambda,Plots)
 
-%First, plot the power and torque curves vs wind speed as function of
-%lambda
+%Plot the power and torque curves vs wind speed as function of lambda
 
 Uin = Data.u_start;
 Uout = Data.u_cut_out;
+Ustep = Data.u_step;
 Rho = 1.225;
 R = Data.r_tip;
 
-U = Uin:1:Uout;
+U = Uin:Ustep:Uout;
 
 for i=1:length(U)
     for j=1:length(lambda)
         Results.P(i,j) = Cp(j)*0.5*Rho*pi*(R)^2*U(i)^3; %Aerodynamic power for each (wind speed,lambda)
-        Results.Omega(i,j) = lambda(j)*U(i)/(R); %Rotor speed for each (wind speed, lambda)
-        Results.Q(i,j) = Results.P(i,j)/Results.Omega(i,j); %Aerodynamic torque for each (wind speed, lambda)
+        Results.T(i,j) = Ct(j)*0.5*Rho*pi*R^2*U(i)^2; %Thrust for each (wind speed, lambda)
+        Results.Omega(i,j) = (lambda(j)*U(i)/R)*60/(2*pi); %Rotor speed for each (wind speed, lambda) [rpm]
+        Results.Q(i,j) = Results.P(i,j)/(Results.Omega(i,j)*2*pi/60); %Aerodynamic torque for each (wind speed, lambda)
     end
 end
 
@@ -24,38 +25,66 @@ if(Plots.TorqueOmegaRotor == true)
     figure('Name','Blade results as a function of lambda')
     subplot(221)
     plot(lambda,Cp)
-    xlabel('Lambda')
-    ylabel('Power coefficent')
+    xlabel('Lambda [-]')
+    ylabel('Power coefficent [-]')
 
     subplot(222)
+    yyaxis right
     plot(lambda,Cq)
-    xlabel('Lambda')
-    ylabel('Torque coefficent')
+    xlabel('Lambda [-]')
+    ylabel('Torque coefficent [-]')
+    yyaxis left
+    plot(lambda,Ct)
+    ylabel('Thrust coefficient [-]')
 
     subplot(2,2,3)
     title('Torque vs Omega for each wind speed');
-    for i=1:(length(U)/2)
-        plot(Results.Omega(i*2-1,:),Results.Q(i*2-1,:));
+    %for i=1:(length(U)/4)
+     %   plot(Results.Omega(i*4-3,:),Results.Q(i*4-3,:));
+    for i=1:(length(U))
+        plot(Results.Omega(i,:),Results.Q(i,:));
         hold on
-        legendInfo{i}=['U: ' num2str(U(i*2-1))];
+%        legendInfo{i}=['U: ' num2str(U(i*2-1))];
+    end
+    hold on
+    xlim([0 800])
+    ylim([0 20])
+    plot(Data.gen_omega,Data.gen_torque)
+   % legend(legendInfo,'Generator curve')
+    xlabel('Omega [rpm]')
+    ylabel('Torque [Nm]')
+
+    subplot(2,2,4)
+  % for i=1:(length(U)/4)
+  %      plot(Results.Omega(i*4-3,:),Results.P(i*4-3,:));
+    for i=1:(length(U))
+        plot(Results.Omega(i,:),Results.P(i,:));
+   
+        hold on
+ %       legendInfo{i}=['U: ' num2str(U(i*2-1))];
+    end 
+    hold on
+    xlim([0 800])
+    plot(Data.gen_omega,Data.gen_torque.*Data.gen_omega*2*pi/(60))
+   % legend(legendInfo,'Generator curve')
+    xlabel('Omega [rpm]')
+    ylabel('Power [W]')
+    
+    
+    figure()
+    title('Torque vs Omega for each wind speed');
+    for i=1:(length(U)/3)
+        plot(Results.Omega(3*i-2,:),Results.Q(3*i-2,:));
+        hold on
+       legendInfo{i}=['U = ' num2str(U(i*3-2)) ' m/s'];
     end
     hold on
     plot(Data.gen_omega,Data.gen_torque)
     legend(legendInfo,'Generator curve')
     xlabel('Omega [rpm]')
     ylabel('Torque [Nm]')
-
-    subplot(2,2,4)
-    for i=1:(length(U)/2)
-        plot(Results.Omega(i*2-1,:),Results.P(i*2-1,:));
-        hold on
-        legendInfo{i}=['U: ' num2str(U(i*2-1))];
-    end
-    hold on
-    plot(Data.gen_omega,Data.gen_torque.*Data.gen_omega*2*pi/(60))
-    legend(legendInfo,'Generator curve')
-    xlabel('Omega [rpm]')
-    ylabel('Power [W]')
+    xlim([0 600])
+    ylim([0 10])
     
 end
 
