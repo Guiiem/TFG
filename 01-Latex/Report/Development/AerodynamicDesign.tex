@@ -185,7 +185,7 @@ A first study was carried out in order to see the general behavior of the wind t
 The first consideration that should be taken into account is the fact that the wind turbine will be working at a very big RPM range. The generator has a nominal rotor speed of 600 RPM, whereas a typical commercial size wind turbine (e.g. General Electric - Cypress platform) works around 10 RPM. The dimensions of them are clearly not comparable, and the reference parameter should be the tip speed ratio. This will be the focus of this study and the source of the design challenge. \\
 
 %Reference formulas to the Handbook!! Also explain how the formulas are obtained
-Both the chord and twist distribution used were obtained using the analytic formulas proposed in the section 3.7.3. of the Wind Energy Handbook by T. Burton et al. \cite{Handbook}. These expressions are analytically obtained for obtaining the optimum induction coefficients $a$ and $a'$ (and thus, maximizing the power coefficient $C_P$) for a given tip speed ratio $\lambda$. For obtaining these formulas no losses have been taken into account. Moreover, the drag has been ignored, although it is demonstrated in the section 3.7.4. that the effect of including it is indeed negligible.   %
+Both the chord and twist distribution used were obtained using the analytic formulas proposed in the section 3.7.3. of the Wind Energy Handbook by T. Burton et al. \cite{Handbook}. These expressions are analytically obtained in order to have the optimum induction coefficients $a$ and $a'$ (and thus, maximizing the power coefficient $C_P$) for a given tip speed ratio $\lambda$. For obtaining these formulas no losses have been taken into account. Moreover, the drag has been ignored, although it is demonstrated in the section 3.7.4. of the Handbook that the effect of including it is indeed negligible.   %
 
 \begin{equation}\label{OptimalChord}
 c = R \dfrac{2 \pi}{\lambda N C_L} \dfrac{8/9}{\sqrt{4/9+(\lambda \mu)^2  \cdot \left( 1+\dfrac{2}{9 (\lambda \mu)^2 } \right)^2 }}
@@ -205,19 +205,84 @@ First, the chord and twist distribution of the selected blade geometry:
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=1\linewidth]{Images/Aerodynamic_Design/Chord_Twist_first}
+	\includegraphics[width=1\linewidth]{Images/Aerodynamic_Design/First_Chord_Twist}
 	\caption[First chord and twist distribution obtained]{First chord and twist distribution obtained. This distribution is optimized for a tip speed ratio of 2.8, and has a pitch offset of -36º.}
 	\label{fig:ChordTwistFirst}
 \end{figure}
 
-At first glance, it might seem abnormal the large pitch offset that is applied to the twist. The optimal twist distribution is created such that the effective angle of attack seen by the blades is always the optimal one $\alpha_{opt}$. Therefore, a big change like that is surprising. The explanation of why this is more "beneficial" from an AEP point of view will be developed after the presentation of these first results. \\
+\FloatBarrier
+
+At first glance, it might seem abnormal the large pitch offset that is applied to the twist. The optimal twist distribution is created such that the effective angle of attack seen by the blades is always the optimal one $\alpha_{opt}$. Therefore, a big change like that is surprising. The explanation of why this is more beneficial from an AEP point of view will be developed after the presentation of these first results. \\
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\linewidth]{Images/Aerodynamic_Design/First_Lambda_Results}
+	\caption[Rotor coefficients as a function of lambda. Intersection with the generator curve. (first results)]{Rotor coefficients as a function of lambda and intersection with the generator curve. The bottom plots show both the generator (the curves that start at the origin of coordinates) and the rotor curves. The rotor curve is shown for different wind speeds and tip speed ratios. Each different curve is one wind speed, and each of its points corresponds to a different tip speed ratio.   }
+	\label{fig:LambdaResultstFirst}
+\end{figure}
+
+\FloatBarrier
+
+As it was explained in the preceding section (Figure \ref{fig:PowerCurveScheme}), the intersection of the rotor and the generator curve will give the operating points of the design. By doing so, the following power curve and operation are obtained.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\linewidth]{Images/Aerodynamic_Design/First_Operation_Results}
+	\caption[First operation results]{First operation results. }
+	\label{fig:OperationResultstFirst}
+\end{figure} 
+ \FloatBarrier
+
+The cut-in wind speed is the one at which the power extracted by the blades is enough to energize the generator. On the other hand, the cut-out wind speed is the wind speed such that the maximum generator power is reached. The region after that will be treated separately, because it will involve furling and big yaw misalignment, and these phenomena is not easy to study with the BEM theory. \\
+
+The most important remark about the results obtained may be seen in the top right plot. The dashed blue lines shows the tip speed ratio $\lambda$ as function of the wind speed. Clearly there is a large variation from the cut-in (0.71) to the cut-out (2.44). It is interesting to note that this variation has been found not only in this design, but in all the different rotor geometries analyzed. This has an immediate effect on the angle of attack seen by the blades during all the operation. From the BEM (inherent definition of the induction factors) it is known that the angle of attack $\alpha$ can be obtained as follows: 
+
+\begin{equation}
+\alpha = \phi - \beta = \arctan\left(\dfrac{U_{\infty} (1-a)}{\Omega r (1+a')}   \right) - \beta = \arctan\left(\dfrac{(1-a)}{\lambda_r (1+a')}   \right) - \beta 
+\end{equation}
+
+The inverse tangent is a growing  function. Thus, if the tip speed ratio is increased, the fraction will decrease, and the angle of attack will decrease (as $\beta$, the sum of the twist and the pitch, is constant). This also depends on the induction factors $a$ and $a'$, but this explanation is enough to understand this effect, and the variation of these factors is more difficult to predict and study as they also depend on the tip speed ratio. The mean angle of attack as a function of the wind speed may be seen in the following figure.  
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\linewidth]{Images/Aerodynamic_Design/First_AngleOfAttack_Analysis}
+	\caption[Angle of attack variation of the first results]{Angle of attack variation of the first results. The left plot shows the mean angle of attack (of all sections) as a function of the incoming wind speed. The right one shows the local angle of attack for a given tip speed ratio ($\lambda=2$).  }
+	\label{fig:AngleOfAttackAnalysisFirst}
+\end{figure} 
+\FloatBarrier
+
+The large angle of attack variation anticipated is observed. The initial mean angle of attack is 85.6º, whereas at the cut-out wind speed is less than 50º. There is a change of more than 40º during all the operation curve. Then, the main question to be asked is: why a design like that appears to be the optimal one? It is surprising that the working region of the airfoils is outside the linear zone. In order to find out an explanation, the airfoil polar can be plotted once again: \\
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\linewidth]{Images/Aerodynamic_Design/First_Polars_OpRegion}
+	\caption[]{Airfoil polar with operation region indicated.}
+	\label{fig:AngleOfAttackPolarsFirst}
+\end{figure} 
+\FloatBarrier
+
+To understand why this operation is more beneficial, firstly it could be analyzed what would happen if the operation regime was located in the linear region. If the cut-in mean angle of attack were, for example, 20º, and the cut-out one were -20º, almost the half of the operation would have a negative lift coefficient. The BEM equations from which the axial induction factor is obtained may show the effect that this has: 
+
+%FIXAR-SE SI AIXÒ JA S'HA EXPLICAT EN UN ALTRE LLOC I REFERENCIAR-HO!!!!
+\begin{equation}
+C_l \cos \phi + C_d \sin \phi = C_x
+\end{equation}
 
 
-%%Exposar resultats
+\begin{equation}
+\dfrac{a}{1-a} = \dfrac{\sigma_r}{4 \sin^2\phi} C_x
+\end{equation}
+
+The coefficient of sectional blade element force normal to the rotor plane $C_x$ would be negative in that case, therefore the axial induction factor $a$ would be less than zero as well. It should be constrained between 0 and 1, so this possibility cannot be studied with the BEM theory without reversing the rotational direction. It makes no sense to reverse the direction in the middle of the operation. Moreover, an operation like that would not match the generator curve, so it would not be possible.   \\
+
+On the other hand, if the operation is contained in the region obtained, the lift coefficient variation is more stable. Furthermore, its value near the cut-out region (where the power produced is higher) is also larger, which is an advantage from a power coefficient point of view. It could be argued that operating from 60º to 20º, for example, would be more beneficial, because the operation would be as solid as the obtained one, and the lift coefficient values would be higher. Firstly, the influence of the flow angle $\phi$ should be taken into account with more detail, and secondly, the number of blade geometries tested was low (225), so it is likely that no geometry capable to operate at that regime was created. Nevertheless, this first study was intended to understand the design challenge that will be faced, as well as the general operating characteristics of the design, and this result is enough for that. \\
+
+An operation like this is not viable. The post stall region is very stochastic, unstable, and it could easily lead to high vibrations and aeroelastic instabilities. The drag is also unacceptable there. However, the behavior seen here is also obtained in other blade geometries analyzed, so it must be taken into consideration for further design. This performance could be summarized as follows: decrease of the angle of attack and increase of the tip speed ratio from the cut-in to the cut-out. It is also interesting to note that a stall control could not be implemented. A typical stall regulated wind turbine works in a constant rotor speed. As the tip speed ratio is defined as $\lambda = \Omega R / U_{\infty}$, as the wind speed increases, the tip speed ratio decreases, and it has been demonstrated that a lower tip speed ratio leads to a higher angle of attack. If it is design properly, the stall will be reached at the desired wind speed. 
+
 
 %%Coses que s'han vist:
 	%-Gran regim de lambda, gran regim AoA. En alguns casos surt millor treballar en la regió de post-stall (foto)
-	%-Stall quan s'acaba la intersecció -> Si Weibull es petita, no val la pena operar més enllà d'aquella U
+	%-Cut out quan s'acaba la intersecció -> Si Weibull es petita, no val la pena operar més enllà d'aquella U
 	%-Operem a lambdes baixes però la pala està optimizada amb lambda més gran (per la chord solidity i corda massa gran a l'arrel). Farem aproximació linel
 
 

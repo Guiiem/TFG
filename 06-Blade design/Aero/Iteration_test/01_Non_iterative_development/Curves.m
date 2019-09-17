@@ -25,50 +25,64 @@ if(Plots.TorqueOmegaRotor == true)
     figure('Name','Blade results as a function of lambda')
     subplot(221)
     plot(lambda,Cp)
+        xlim([0 6])
     xlabel('Lambda [-]')
     ylabel('Power coefficent [-]')
 
     subplot(222)
     yyaxis right
     plot(lambda,Cq)
+            xlim([0 6])
     xlabel('Lambda [-]')
     ylabel('Torque coefficent [-]')
     yyaxis left
+            xlim([0 6])
     plot(lambda,Ct)
     ylabel('Thrust coefficient [-]')
 
-    subplot(2,2,3)
+    subplot(2,2,4)
     title('Torque vs Omega for each wind speed');
-    %for i=1:(length(U)/4)
-     %   plot(Results.Omega(i*4-3,:),Results.Q(i*4-3,:));
-    for i=1:(length(U))
-        plot(Results.Omega(i,:),Results.Q(i,:));
+    for i=1:(length(U)/10)
+        plot(Results.Omega(i*10-9,:),Results.Q(i*10-9,:));
+    %for i=1:(length(U))
+     %   plot(Results.Omega(i,:),Results.Q(i,:));
         hold on
 %        legendInfo{i}=['U: ' num2str(U(i*2-1))];
     end
     hold on
     xlim([0 800])
-    ylim([0 20])
+    ylim([0 15])
     plot(Data.gen_omega,Data.gen_torque)
    % legend(legendInfo,'Generator curve')
     xlabel('Omega [rpm]')
     ylabel('Torque [Nm]')
 
-    subplot(2,2,4)
-  % for i=1:(length(U)/4)
-  %      plot(Results.Omega(i*4-3,:),Results.P(i*4-3,:));
-    for i=1:(length(U))
-        plot(Results.Omega(i,:),Results.P(i,:));
+    Gen_Omega = Data.gen_omega(1):1:Data.gen_omega(2);
+    Gen_Power = Gen_Omega.^2.*Data.gen_torque(2)./Data.gen_omega(2)*2*pi/60;
+    
+    
+    subplot(2,2,3)
+   for i=1:(length(U)/10)
+        plot(Results.Omega(i*10-9,:),Results.P(i*10-9,:));
+  %  for i=1:(length(U))
+   %     plot(Results.Omega(i,:),Results.P(i,:));
    
         hold on
- %       legendInfo{i}=['U: ' num2str(U(i*2-1))];
+        legendInfo{i}=['U = ' num2str(U(i*10-9)) ' m/s'];
     end 
     hold on
     xlim([0 800])
-    plot(Data.gen_omega,Data.gen_torque.*Data.gen_omega*2*pi/(60))
-   % legend(legendInfo,'Generator curve')
+    ylim([0 650])
+    plot(Gen_Omega,Gen_Power)
+    legend(legendInfo,'Generator')
     xlabel('Omega [rpm]')
     ylabel('Power [W]')
+    x0=10;
+    y0=10;
+    width=700;
+    height=400;
+    set(gcf,'position',[x0,y0,width,height])
+
     
     
     figure()

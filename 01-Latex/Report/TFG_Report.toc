@@ -24,17 +24,17 @@
 \contentsline {subsection}{\numberline {2.4.2}Blades design}{22}{subsection.2.4.2}
 \contentsline {subsubsection}{\numberline {2.4.2.1}Power curve calculation}{22}{subsubsection.2.4.2.1}
 \contentsline {subsubsection}{\numberline {2.4.2.2}Initial approach and design challenge}{23}{subsubsection.2.4.2.2}
-\contentsline {subsubsection}{\numberline {2.4.2.3}Optimization procedure}{25}{subsubsection.2.4.2.3}
-\contentsline {section}{\numberline {2.5}Structural design}{25}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}3D printing previous considerations}{25}{subsection.2.5.1}
-\contentsline {subsubsection}{\numberline {2.5.1.1}Printer characteristics}{25}{subsubsection.2.5.1.1}
-\contentsline {subsubsection}{\numberline {2.5.1.2}Filament selection}{25}{subsubsection.2.5.1.2}
-\contentsline {subsection}{\numberline {2.5.2}Load cases}{25}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Link design and printing properties}{25}{subsection.2.5.3}
-\contentsline {chapter}{\numberline {3}Summary of the results}{26}{chapter.3}
-\contentsline {section}{\numberline {3.1}Budget summary}{26}{section.3.1}
-\contentsline {section}{\numberline {3.2}Analysis and assessment of the environmental implications}{26}{section.3.2}
-\contentsline {section}{\numberline {3.3}Future lines of work}{26}{section.3.3}
-\contentsline {section}{\numberline {3.4}Planning and programming of the next stage}{26}{section.3.4}
-\contentsline {section}{\numberline {3.5}Conclusions}{26}{section.3.5}
-\contentsline {chapter}{Bibliography}{27}{chapter*.28}
+\contentsline {subsubsection}{\numberline {2.4.2.3}Optimization procedure}{28}{subsubsection.2.4.2.3}
+\contentsline {section}{\numberline {2.5}Structural design}{28}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}3D printing previous considerations}{28}{subsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.1.1}Printer characteristics}{28}{subsubsection.2.5.1.1}
+\contentsline {subsubsection}{\numberline {2.5.1.2}Filament selection}{28}{subsubsection.2.5.1.2}
+\contentsline {subsection}{\numberline {2.5.2}Load cases}{28}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Link design and printing properties}{28}{subsection.2.5.3}
+\contentsline {chapter}{\numberline {3}Summary of the results}{29}{chapter.3}
+\contentsline {section}{\numberline {3.1}Budget summary}{29}{section.3.1}
+\contentsline {section}{\numberline {3.2}Analysis and assessment of the environmental implications}{29}{section.3.2}
+\contentsline {section}{\numberline {3.3}Future lines of work}{29}{section.3.3}
+\contentsline {section}{\numberline {3.4}Planning and programming of the next stage}{29}{section.3.4}
+\contentsline {section}{\numberline {3.5}Conclusions}{29}{section.3.5}
+\contentsline {chapter}{Bibliography}{30}{chapter*.32}

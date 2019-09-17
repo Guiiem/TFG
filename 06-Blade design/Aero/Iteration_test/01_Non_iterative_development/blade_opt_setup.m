@@ -45,9 +45,9 @@ data.no_genes=15;
 % data.u_start   wind speed (m/s) for the starting calculation
 data.u_start=2.0;
 % data.u_step   wind speed steps (m/s) for all the calculations
-data.u_step = 0.25;
+data.u_step = 0.2;
 % data.u_cut_out    wind speed (m/s) for cut out
-data.u_cut_out = 15;
+data.u_cut_out = 16;
 % data.u_power   wind sTpeed (m/s) for the power extraction calculation
 data.u_power=10;
 % data.lambda_start  the tip speed ratio (TSR) to "complete" starting
@@ -60,7 +60,7 @@ data.t_max=600;
 data.lambda_power=4.608;
 
 % data.lambda_range     range of lambda to be studied
-data.lambda_range = 0.7:0.1:8;
+data.lambda_range = 0.7:0.02:4;
 
 % data.r_tip     blade tip radius (m)
 data.r_tip=0.5;
@@ -88,7 +88,7 @@ data.delt = 0.15;
 %data.gen_power    generator power curve
 data.gen_power = [0 500];
 % data.gen_torque   generator torque curve
-data.gen_torque =  [0 500/(600*2*pi/60)*Gr];
+data.gen_torque =  [0.42 500/(600*2*pi/60)*Gr];
 % data.gen_omega    generator rpm curve
 data.gen_omega = [0 600/Gr];
 % data.Weibull_A     Weibull parameter A

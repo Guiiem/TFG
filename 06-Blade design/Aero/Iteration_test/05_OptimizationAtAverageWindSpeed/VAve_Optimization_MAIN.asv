@@ -8,7 +8,7 @@ addpath ..\03_PowerCalcTest\;
 addpath ..\04_TradeOff_StartingAEP\;
 
 %Optimization wind speed
-U_opt = [3 4 7 9 10 11]; %[m/s]
+U_opt = [3 5 7 9 10 11]; %[m/s]
 
 
 %%Generation of the Data file to be used in the PowerCoef Function
@@ -18,7 +18,7 @@ Data = blade_opt_setup;
 Data = Viterna_Extrapolation(Data);
 
 %%Select which plots you want to be printed or not
-Plots = PlotSelectionFinal;
+Plots = PlotSelection;
 
 %%Generation of the twist and chord distribution to be tested
 Blade = Creator_VAve_Optimization(Data);
@@ -51,17 +51,18 @@ figure()
 plot(Omega,P_TL)
 hold on
 plot(Gen_Omega, Gen_Power)
-legend('Uopt = 3 m/s','Uopt = 4 m/s','Uopt = 7 m/s','Uopt = 9 m/s','Uopt = 10 m/s','Uopt = 11 m/s','Generator curve')
+legend('Uopt = 3 m/s','Uopt = 5 m/s','Uopt = 7 m/s','Uopt = 9 m/s','Uopt = 10 m/s','Uopt = 11 m/s','Generator curve')
 grid on
 xlabel('Rotor speed [rpm]')
 ylabel('Power [W]')
 
 %Find intersection lambda
-Lambda_ind = FindLambdaGeometry(Data, P_TL(:,3), Omega(:,3));
+
+
+
 
 %Select this geometry and do all the procedure of the power curve
-Plots = PlotSelectionFinal; %Now we want to see the final plots
-[AEP, ~, Operation_selected,Power_Curve] = BigSolver(Data, Blade.Chord(Lambda_ind,:),Blade.Twist(Lambda_ind,:), Plots);
+
 
 
 

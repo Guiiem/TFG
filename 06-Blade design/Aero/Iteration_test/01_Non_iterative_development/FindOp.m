@@ -152,7 +152,7 @@ for j=1:length(U)
     elseif (res == 0 && U(j)<8)
         Operation.Omega(j) = NaN;
         Operation.Q(j) = NaN;
-        Operation.Lambda(j) = 0;
+        Operation.Lambda(j) = NaN;
         Operation.T(j) = NaN;          
         
     else
@@ -168,28 +168,59 @@ Operation.Cp = Operation.P(:,1)'./(0.5*1.225*pi*Data.r_tip^2.*U(1,:).^3);
 %Compute thrust coefficient
 Operation.Ct = Operation.T(:,1)'./(0.5*1.225*pi*Data.r_tip^2.*U(1,:).^2);
 
+
+
 %We know the lambda at each operational point. Compute the mean angle of
 %attack, lift and drag coefficient there
 for i=1:length(Operation.Lambda)
     lam = Operation.Lambda(i);
-    Del_lam = Power_Curve.Lambda(2)-Power_Curve.Lambda(1);
-    %Find the index of the power curve lambda vector
-    [~,ind] = find(Power_Curve.Lambda > lam, 1);
-    if ind == 1
-        Operation.MeanAoA(i) = Power_Curve.MeanAoA(ind);
-        Operation.MeanCl(i) = Power_Curve.MeanCl(ind);
+    if ~isnan(lam)
+        Del_lam = Power_Curve.Lambda(2)-Power_Curve.Lambda(1);
+        %Find the index of the power curve lambda vector
+        [~,ind] = find(Power_Curve.Lambda > lam, 1);
+        if ind == 1
+            Operation.MeanAoA(i) = Power_Curve.MeanAoA(ind);
+            Operation.MeanCl(i) = Power_Curve.MeanCl(ind);
+        else
+            x = (lam-Power_Curve.Lambda(ind-1))/Del_lam;
+            Operation.MeanAoA(i) = Power_Curve.MeanAoA(ind-1)*(1-x) + Power_Curve.MeanAoA(ind)*(x);
+            Operation.MeanCl(i) = Power_Curve.MeanCl(ind-1)*(1-x) + Power_Curve.MeanCl(ind)*(x);
+        end
     else
-    x = (lam-Power_Curve.Lambda(ind-1))/Del_lam;
-    Operation.MeanAoA(i) = Power_Curve.MeanAoA(ind-1)*(1-x) + Power_Curve.MeanAoA(ind)*(x);
-    Operation.MeanCl(i) = Power_Curve.MeanCl(ind-1)*(1-x) + Power_Curve.MeanCl(ind)*(x);  
+        Operation.MeanAoA(i) = NaN;
+        Operation.MeanCl(i) = NaN;
     end
 end
 
-%Store the values of wind speed used
+%Eliminate the values of U before cut-in
+for i = 1:length(U)
+    if isnan(Operation.Lambda(i))
+       ind = i;
+    end 
+end
+
+fin = length(U);
+U = U(ind+1:fin);
 Operation.U = U;
+Operation.Omega = Operation.Omega(ind+1:fin);
+Operation.Lambda = Operation.Lambda(ind+1:fin);
+Operation.P = Operation.P(ind+1:fin);
+Operation.Q = Operation.Q(ind+1:fin);
+Operation.T = Operation.T(ind+1:fin);
+Operation.Cp = Operation.Cp(ind+1:fin);
+Operation.Ct = Operation.Ct(ind+1:fin);
+Operation.MeanAoA = Operation.MeanAoA(ind+1:fin);
+Operation.MeanCl = Operation.MeanCl(ind+1:fin);
 
 
 
+
+
+
+
+
+
+%Plots
 if Plots.OperationalPoints == true 
     figure('Name','Operation results with the generator curve')
     

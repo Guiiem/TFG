@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.8)  13 SEP 2019 17:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.8)  15 SEP 2019 13:33
 entering extended mode
 **./TFG_Report.tex
 (TFG_Report.tex
@@ -1952,7 +1952,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 [7
 
 ]
-<Images/Total_cumulative_instlled_capacity.png, id=301, 364.36125pt x 215.6055p
+<Images/Total_cumulative_instlled_capacity.png, id=326, 364.36125pt x 215.6055p
 t>
 File: Images/Total_cumulative_instlled_capacity.png Graphic file (type png)
  <use Images/Total_cumulative_instlled_capacity.png>
@@ -1960,7 +1960,7 @@ Package pdftex.def Info: Images/Total_cumulative_instlled_capacity.png used on
 input line 19.
 (pdftex.def)             Requested size: 386.96027pt x 228.98814pt.
 
-<Images/SWT_Installed_capacity_forecast.png, id=302, 364.36125pt x 289.08pt>
+<Images/SWT_Installed_capacity_forecast.png, id=327, 364.36125pt x 289.08pt>
 File: Images/SWT_Installed_capacity_forecast.png Graphic file (type png)
 
 <use Images/SWT_Installed_capacity_forecast.png>
@@ -1999,7 +1999,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--109
  []
 
 
-<Images/Upwind-a-and-downwind-b-wind-turbines.png, id=344, 853.1875pt x 646.415
+<Images/Upwind-a-and-downwind-b-wind-turbines.png, id=369, 853.1875pt x 646.415
 pt>
 File: Images/Upwind-a-and-downwind-b-wind-turbines.png Graphic file (type png)
  <use Images/Upwind-a-and-downwind-b-wind-turbines.png>
@@ -2030,7 +2030,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
-<Images/Cp_number_blades.png, id=359, 676.32675pt x 339.06676pt>
+<Images/Cp_number_blades.png, id=384, 676.32675pt x 339.06676pt>
 File: Images/Cp_number_blades.png Graphic file (type png)
 
 <use Images/Cp_number_blades.png>
@@ -2098,7 +2098,7 @@ al_force-eps-converted-to.pdf Images/Lambda_influence_axial_force.eps>
 (epstopdf)             \includegraphics on input line 20.
 Package epstopdf Info: Output file is already uptodate.
 
-<Images/Lambda_influence_axial_force-eps-converted-to.pdf, id=405, 451.6875pt x
+<Images/Lambda_influence_axial_force-eps-converted-to.pdf, id=430, 451.6875pt x
  263.98625pt>
 File: Images/Lambda_influence_axial_force-eps-converted-to.pdf Graphic file (ty
 pe pdf)
@@ -2188,7 +2188,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-<Images/Low_RE_Number.png, id=437, 539.616pt x 423.984pt>
+<Images/Low_RE_Number.png, id=462, 539.616pt x 423.984pt>
 File: Images/Low_RE_Number.png Graphic file (type png)
 
 <use Images/Low_RE_Number.png>
@@ -2231,7 +2231,7 @@ File: Logo_escola.png Graphic file (type png)
 Package pdftex.def Info: Logo_escola.png used on input line 168.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
  [22]
-<Images/Power_curve_procedure_image.jpg, id=498, 1246.6575pt x 1347.0325pt>
+<Images/Power_curve_procedure_image.jpg, id=524, 1246.6575pt x 1347.0325pt>
 File: Images/Power_curve_procedure_image.jpg Graphic file (type jpg)
 
 <use Images/Power_curve_procedure_image.jpg>
@@ -2262,49 +2262,185 @@ Underfull \hbox (badness 10000) in paragraph at lines 202--203
 
  []
 
-Package epstopdf Info: Source file: <Images/Aerodynamic_Design/Chord_Twist_firs
+Package epstopdf Info: Source file: <Images/Aerodynamic_Design/First_Chord_Twis
 t.eps>
 (epstopdf)                    date: 2019-09-13 17:05:06
 (epstopdf)                    size: 18454 bytes
-(epstopdf)             Output file: <Images/Aerodynamic_Design/Chord_Twist_firs
+(epstopdf)             Output file: <Images/Aerodynamic_Design/First_Chord_Twis
 t-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-09-13 17:07:50
+(epstopdf)                    date: 2019-09-14 15:05:05
 (epstopdf)                    size: 3821 bytes
-(epstopdf)             Command: <epstopdf --outfile=Images/Aerodynamic_Design/C
-hord_Twist_first-eps-converted-to.pdf Images/Aerodynamic_Design/Chord_Twist_fir
+(epstopdf)             Command: <epstopdf --outfile=Images/Aerodynamic_Design/F
+irst_Chord_Twist-eps-converted-to.pdf Images/Aerodynamic_Design/First_Chord_Twi
 st.eps>
-(epstopdf)             \includegraphics on input line 206.
+(epstopdf)             \includegraphics on input line 208.
 Package epstopdf Info: Output file is already uptodate.
 
-<Images/Aerodynamic_Design/Chord_Twist_first-eps-converted-to.pdf, id=505, 526.
+<Images/Aerodynamic_Design/First_Chord_Twist-eps-converted-to.pdf, id=531, 526.
 96875pt x 150.5625pt>
-File: Images/Aerodynamic_Design/Chord_Twist_first-eps-converted-to.pdf Graphic 
+File: Images/Aerodynamic_Design/First_Chord_Twist-eps-converted-to.pdf Graphic 
 file (type pdf)
 
-<use Images/Aerodynamic_Design/Chord_Twist_first-eps-converted-to.pdf>
-Package pdftex.def Info: Images/Aerodynamic_Design/Chord_Twist_first-eps-conver
-ted-to.pdf used on input line 206.
+<use Images/Aerodynamic_Design/First_Chord_Twist-eps-converted-to.pdf>
+Package pdftex.def Info: Images/Aerodynamic_Design/First_Chord_Twist-eps-conver
+ted-to.pdf used on input line 208.
 (pdftex.def)             Requested size: 455.24411pt x 130.07623pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (Development/StructuralDesign.tex)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+File: Logo_escola.png Graphic file (type png)
+<use Logo_escola.png>
+Package pdftex.def Info: Logo_escola.png used on input line 213.
+(pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
+ [24]
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
+ []
+
+Package epstopdf Info: Source file: <Images/Aerodynamic_Design/First_Lambda_Res
+ults.eps>
+(epstopdf)                    date: 2019-09-13 22:02:04
+(epstopdf)                    size: 56198 bytes
+(epstopdf)             Output file: <Images/Aerodynamic_Design/First_Lambda_Res
+ults-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-09-14 15:05:12
+(epstopdf)                    size: 15121 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/Aerodynamic_Design/F
+irst_Lambda_Results-eps-converted-to.pdf Images/Aerodynamic_Design/First_Lambda
+_Results.eps>
+(epstopdf)             \includegraphics on input line 219.
+Package epstopdf Info: Output file is already uptodate.
+
+<Images/Aerodynamic_Design/First_Lambda_Results-eps-converted-to.pdf, id=540, 5
+26.96875pt x 301.125pt>
+File: Images/Aerodynamic_Design/First_Lambda_Results-eps-converted-to.pdf Graph
+ic file (type pdf)
+
+<use Images/Aerodynamic_Design/First_Lambda_Results-eps-converted-to.pdf>
+Package pdftex.def Info: Images/Aerodynamic_Design/First_Lambda_Results-eps-con
+verted-to.pdf used on input line 219.
+(pdftex.def)             Requested size: 455.24411pt x 260.1525pt.
+Package epstopdf Info: Source file: <Images/Aerodynamic_Design/First_Operation_
+Results.eps>
+(epstopdf)                    date: 2019-09-14 15:19:53
+(epstopdf)                    size: 37583 bytes
+(epstopdf)             Output file: <Images/Aerodynamic_Design/First_Operation_
+Results-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-09-14 15:21:34
+(epstopdf)                    size: 7204 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/Aerodynamic_Design/F
+irst_Operation_Results-eps-converted-to.pdf Images/Aerodynamic_Design/First_Ope
+ration_Results.eps>
+(epstopdf)             \includegraphics on input line 230.
+Package epstopdf Info: Output file is already uptodate.
+
+<Images/Aerodynamic_Design/First_Operation_Results-eps-converted-to.pdf, id=542
+, 526.96875pt x 301.125pt>
+File: Images/Aerodynamic_Design/First_Operation_Results-eps-converted-to.pdf Gr
+aphic file (type pdf)
+
+<use Images/Aerodynamic_Design/First_Operation_Results-eps-converted-to.pdf>
+Package pdftex.def Info: Images/Aerodynamic_Design/First_Operation_Results-eps-
+converted-to.pdf used on input line 230.
+(pdftex.def)             Requested size: 455.24411pt x 260.1525pt.
 File: Logo_escola.png Graphic file (type png)
 
 <use Logo_escola.png>
-Package pdftex.def Info: Logo_escola.png used on input line 215.
+Package pdftex.def Info: Logo_escola.png used on input line 233.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
- [24]
+ [25 <./Images/Aerodynamic_Design/First_Chord_Twist-eps-converted-to.pdf> <./Im
+ages/Aerodynamic_Design/First_Lambda_Results-eps-converted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
+
+ []
+
+Package epstopdf Info: Source file: <Images/Aerodynamic_Design/First_AngleOfAtt
+ack_Analysis.eps>
+(epstopdf)                    date: 2019-09-14 16:26:04
+(epstopdf)                    size: 20845 bytes
+(epstopdf)             Output file: <Images/Aerodynamic_Design/First_AngleOfAtt
+ack_Analysis-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-09-14 16:41:05
+(epstopdf)                    size: 4610 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/Aerodynamic_Design/F
+irst_AngleOfAttack_Analysis-eps-converted-to.pdf Images/Aerodynamic_Design/Firs
+t_AngleOfAttack_Analysis.eps>
+(epstopdf)             \includegraphics on input line 248.
+Package epstopdf Info: Output file is already uptodate.
+
+<Images/Aerodynamic_Design/First_AngleOfAttack_Analysis-eps-converted-to.pdf, i
+d=554, 526.96875pt x 172.645pt>
+File: Images/Aerodynamic_Design/First_AngleOfAttack_Analysis-eps-converted-to.p
+df Graphic file (type pdf)
+
+<use Images/Aerodynamic_Design/First_AngleOfAttack_Analysis-eps-converted-to.pd
+f>
+Package pdftex.def Info: Images/Aerodynamic_Design/First_AngleOfAttack_Analysis
+-eps-converted-to.pdf used on input line 248.
+(pdftex.def)             Requested size: 455.24411pt x 149.15408pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: Logo_escola.png Graphic file (type png)
+<use Logo_escola.png>
+Package pdftex.def Info: Logo_escola.png used on input line 252.
+(pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
+ [26 <./Images/Aerodynamic_Design/First_Operation_Results-eps-converted-to.pdf>
+]
+Underfull \hbox (badness 10000) in paragraph at lines 254--255
+
+ []
+
+Package epstopdf Info: Source file: <Images/Aerodynamic_Design/First_Polars_OpR
+egion.eps>
+(epstopdf)                    date: 2019-09-15 11:15:47
+(epstopdf)                    size: 36963 bytes
+(epstopdf)             Output file: <Images/Aerodynamic_Design/First_Polars_OpR
+egion-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-09-15 11:18:31
+(epstopdf)                    size: 7486 bytes
+(epstopdf)             Command: <epstopdf --outfile=Images/Aerodynamic_Design/F
+irst_Polars_OpRegion-eps-converted-to.pdf Images/Aerodynamic_Design/First_Polar
+s_OpRegion.eps>
+(epstopdf)             \includegraphics on input line 258.
+Package epstopdf Info: Output file is already uptodate.
+
+<Images/Aerodynamic_Design/First_Polars_OpRegion-eps-converted-to.pdf, id=563, 
+451.6875pt x 263.98625pt>
+File: Images/Aerodynamic_Design/First_Polars_OpRegion-eps-converted-to.pdf Grap
+hic file (type pdf)
+
+<use Images/Aerodynamic_Design/First_Polars_OpRegion-eps-converted-to.pdf>
+Package pdftex.def Info: Images/Aerodynamic_Design/First_Polars_OpRegion-eps-co
+nverted-to.pdf used on input line 258.
+(pdftex.def)             Requested size: 455.24411pt x 266.0802pt.
+File: Logo_escola.png Graphic file (type png)
+
+<use Logo_escola.png>
+Package pdftex.def Info: Logo_escola.png used on input line 265.
+(pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
+ [27 <./Images/Aerodynamic_Design/First_AngleOfAttack_Analysis-eps-converted-to
+.pdf> <./Images/Aerodynamic_Design/First_Polars_OpRegion-eps-converted-to.pdf>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--277
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
+
+ []
+
+) (Development/StructuralDesign.tex)
 File: Logo_escola.png Graphic file (type png)
  <use Logo_escola.png>
 Package pdftex.def Info: Logo_escola.png used on input line 215.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
- [25 <./Images/Aerodynamic_Design/Chord_Twist_first-eps-converted-to.pdf>]
+ [28]
 Chapter 3.
-(TFG_Report.bbl [26
+(TFG_Report.bbl [29
 
 ]
 Underfull \hbox (badness 2351) in paragraph at lines 78--80
@@ -2324,7 +2460,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--88
 urbinestar . com/$[] [Ac-c-cessed:
  []
 
-[27
+[30
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 98--101
@@ -2374,34 +2510,34 @@ File: Logo_escola.png Graphic file (type png)
  <use Logo_escola.png>
 Package pdftex.def Info: Logo_escola.png used on input line 234.
 (pdftex.def)             Requested size: 142.26378pt x 37.90488pt.
- [28]
+ [31]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 234.
  (TFG_Report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 234.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 234.
 Package rerunfilecheck Info: File `TFG_Report.out' has not changed.
-(rerunfilecheck)             Checksum: C2A0831D256F96E43B954C8CA52A2ABA;2816.
+(rerunfilecheck)             Checksum: D7FB9DA36D4A5B689931EBD27FBFAA7F;2816.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 31392 strings out of 493323
- 583823 string characters out of 3139067
- 768928 words of memory out of 3000000
- 34218 multiletter control sequences out of 15000+200000
- 640085 words of font info for 88 fonts, out of 3000000 for 9000
+ 32107 strings out of 493323
+ 594877 string characters out of 3139067
+ 773070 words of memory out of 3000000
+ 34901 multiletter control sequences out of 15000+200000
+ 637097 words of font info for 87 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,16n,92p,10363b,1140s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 65i,16n,92p,10363b,1147s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{subsection.1.1.2} has been referenced but does no
 t exist, replaced by a fixed one
 
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files
-/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc
-/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.e
-nc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Fi
-les/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}<C:/Program Files/MiKTeX 2.9/fonts
+/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/en
+c/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.
+enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files
+/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}<C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
 lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmcsc10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKT
@@ -2412,9 +2548,9 @@ les/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/font
 s/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
 /lmri12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on TFG_Report.pdf (32 pages, 1048907 bytes).
+Output written on TFG_Report.pdf (35 pages, 1090748 bytes).
 PDF statistics:
- 643 PDF objects out of 1000 (max. 8388607)
- 175 named destinations out of 1000 (max. 500000)
- 358 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 709 PDF objects out of 1000 (max. 8388607)
+ 204 named destinations out of 1000 (max. 500000)
+ 378 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -49,9 +49,7 @@ for i = 1:len
         Blade.Twist(i,j) = rad2deg(atan((2/3)/(Lambda(i)*mu(j)*(1+2/(9*(Lambda(i)*mu(j))^2))))-a_opt);
     end
     
-    Blade.Chord_Lineal(i,:) = ChordLinealization(Blade.Chord_BeforeLinear(i,:),mu); %Chord lineal
-    Blade.Chord_Lineal_Limited(i,:) = ChordLimitation(Blade.Chord_Lineal(i,:)); %Chord lineal + limited to a certain value
-    Blade.Chord(i,:) = ChordLimitation(Blade.Chord_BeforeLinear(i,:)); %Chord limited to a certain value. The rest stands as the optimal geometry
+    Blade.Chord(i,:) = ChordLinealization(Blade.Chord_BeforeLinear(i,:),mu);
 end
 
 
@@ -73,21 +71,13 @@ Blade.Lambda = Lambda;
 
 %Eliminate the blades that have chord solidity higher than one
 Cs = 0.5/pi*N_bl*Blade.Chord(:,1)./(mu(1)*R);
-ind = 0;
 for i = 1:len
     if Cs(i) >= 1
         ind = i;
     end
 end
 
-Blade.Chord_BeforeLinear = Blade.Chord_BeforeLinear((ind+1:len),:);
-Blade.Chord = Blade.Chord((ind+1:len),:);
-Blade.Chord_Lineal = Blade.Chord_Lineal((ind+1:len),:);
-Blade.Twist = Blade.Twist((ind+1:len),:);
-Blade.Chord_Boundary = Blade.Chord_Boundary((ind+1:len),:);
-Blade.Twist_Boundary = Blade.Twist_Boundary((ind+1:len),:);
-Blade.Lambda = Blade.Lambda(ind+1:len);
-
+Blade.Chord = Blade.Chord(
 
         
 

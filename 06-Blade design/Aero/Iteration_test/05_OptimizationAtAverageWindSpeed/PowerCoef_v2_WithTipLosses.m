@@ -11,7 +11,7 @@ D = Data.r_tip*2; %Rotor diameter
 cs = 0.5/pi*Nb*Chord./(mu*D/2); %Local solidity
 r = mu*D/2; %Radial positions
 Delta_r = r(2)-r(1);
-delta = 0.001;
+delta = 0.002;
 
 %Lift and drag coefficients
 aoa_int=Data.alpha; % Alpha array for Cl and Cd data
@@ -30,7 +30,7 @@ Re_log=Data.re_log; % log(Re) array
 %Start values
 a_calc = 1/3; %Start considering the optimal axial induction factor 
 a = 1/3;
-ite_max = 1000; %Maximum number of iterations 
+ite_max = 5000; %Maximum number of iterations 
 CP = 0; %Power coefficient
 CT = 0; %Thrust coefficient
 
@@ -145,6 +145,7 @@ for j=1:length(r) %We will iterate for each node
     if (Cp(j)<0)
         Cp(j) = 0;
     end
+    Power_Curve.CpSection(m,j) = Cp(j);
     Power_Curve.NumIterations(m,j) = i;
     Power_Curve.Y1(m,j) = Y1;
     Power_Curve.F(m,j) = F;

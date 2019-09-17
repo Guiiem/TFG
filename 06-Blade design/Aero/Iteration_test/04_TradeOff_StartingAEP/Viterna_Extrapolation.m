@@ -59,11 +59,11 @@ Data.cd_array = Cd_new;
 Data.alpha = Alpha_new;   
 
 
+% figure('Name','Airfoil coefficients')
+% plot(Alpha_new,Cl_new(:,i))
+% hold on
+% plot(Alpha_new,Cd_new(:,i))
 
-%     plot(Alpha_new,Cl_new(:,i))
-%     hold on
-%     plot(Alpha_new,Cd_new(:,i))
-    
     
 
 %Extrat extrapolation data for further extrapolations

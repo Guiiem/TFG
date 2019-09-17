@@ -1,4 +1,4 @@
-function AEP = AnnualEnergyProduction(Operation,Data,Plots);
+function AEP = AnnualEnergyProduction(Operation,Data,Plots)
 
 %Generation of the wind speed vector
 U = Operation.U;
