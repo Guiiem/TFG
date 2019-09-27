@@ -41,7 +41,7 @@ data.area=659.89/(100^2);
 % data.rho_blade     blade density (kg/m^3)
 data.rho_blade=430;
 % data.no_genes      number of genes (blade elements) per blade
-data.no_genes=15;
+data.no_genes=150;
 % data.u_start   wind speed (m/s) for the starting calculation
 data.u_start=2.0;
 % data.u_step   wind speed steps (m/s) for all the calculations
@@ -60,7 +60,7 @@ data.t_max=600;
 data.lambda_power=4.608;
 
 % data.lambda_range     range of lambda to be studied
-data.lambda_range = 0.7:0.02:4;
+data.lambda_range = 0.5:0.1:3.5;
 
 % data.r_tip     blade tip radius (m)
 data.r_tip=0.5;

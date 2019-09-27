@@ -1,4 +1,4 @@
-function [cp, torque] =power_calc_opt(data,chord,twist, iprint)
+function [cp, cq, ct] =power_calc_opt(data,chord,twist, iprint)
 % Extract information from data structure
 aoa_int=data.alpha; % Alpha array for Cl and Cd data
 aoa_max=max(aoa_int);% Max. angle of attack
@@ -107,7 +107,13 @@ for i = 1: nbes
       if (iprint == 1)
              fprintf(format_screen, rad(i), j, aoa, a, Cl, Cd, deltor, Rei)
       end
-cp = torque*lambda;
+cp(i) = torque*lambda;
 if cp > 0.593; cp=0.005;end
 
+cq(i) = torque;
+ct(i) = thrust;
+
+%Informació a guardar: Cp, NumItrt, Y1, F, f, AoA, Cl, Cd, a, ap, Blade
+%solidity, meancl, meanaoa, lambda, cp, ct, cq
 end
+

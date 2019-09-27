@@ -153,6 +153,7 @@ for j=1:length(r) %We will iterate for each node
     Power_Curve.Cl(m,j) = Cl;
     Power_Curve.Cd(m,j) = Cd;
     Power_Curve.a(m,j) = a;
+    Power_Curve.ap(m,j) = ap;
     CP = CP + Cp(j) * (2*pi*r(j)*Delta_r) / (pi*(D/2)^2); % Total coefficient of power
     Ct = 4*a*(1-a); %Coefficient of thrust of the node
     CT = CT + Ct * (2*pi*r(j)*Delta_r) / (pi*(D/2)^2); % Total coefficient of thrust

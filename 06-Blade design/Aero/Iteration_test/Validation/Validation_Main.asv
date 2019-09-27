@@ -2,11 +2,17 @@ clc
 close all
 clear variables
 
+%Read QBlade Data
+Read_QBlade_Data;
+Read_ClArray;
+Read_CdArray;
+
 %%Generation of the Data file to be used in the PowerCoef Function
 Data = blade_opt_setup;
 
+
 %%Extrapolate the 360º polar curves 
-Data = Viterna_Extrapolation(Data);
+%Data = Viterna_Extrapolation(Data);
 
 %%Select which plots you want to be printed or not
 Plots = PlotSelection;
@@ -14,14 +20,53 @@ Plots = PlotSelection;
 %%Generation of the twist and chord distribution to be tested
 Blade = Creator_Validation(Data);
 
+
+Data.cl_array = polarcl(:,2);
+Data.cd_array = polarcd(:,2);
+Data.alpha = polarcl(:,1);
+
+
+
 %Power_Curve = struct; %Create struct
-Power_Curve = struct;
+Power_Curve_OwnCurve_NoTipLosses = struct;
+Power_Curve_OwnCurve_TipLosses = struct;
+Hansen = struct;
+Hansen_TipLoss = struct;
+Hansen_TipLoss_QB = struct;
+Book = struct;
+
+Options.TipLoss = 0;
+Options.RootLoss = 0;
 
 %Evaluate Cp_Lambda
-for i=1:length(Blade.Lambda)
-    Data.lambda_power = Blade.Lambda(i);
-    Power_Curve_TL = PowerCoef_v2_WithTipLosses(Power_Curve_TL,Data,Blade.Chord(i,:),Blade.Twist(i,:),i); %Own code with tip losses
+for i=1:length(Data.lambda_range)
+    Data.lambda_power = Data.lambda_range(i);
+    Hansen_QB = PowerCoef_Hansen_QBlade_Total(Options,Hansen_TipLoss_QB,Data,Blade.Chord_Boundary(1,:),Blade.Twist_Boundary(1,:),i);
+    Options.TipLoss = 1;
+    Hansen_QB_TipLoss =
+    
+    
 end
 
-Lambda_Results = Curves(Power_Curve.CP, Power_Curve.CQ, Power_Curve.CT, Data,lambda,Plots);
+lambda = Data.lambda_range;
+%Lambda_Results_OwnCode_NoTipLosses = Curves(Power_Curve_OwnCurve_NoTipLosses.CP, Power_Curve_OwnCurve_NoTipLosses.CQ, Power_Curve_OwnCurve_NoTipLosses.CT, Data,lambda,Plots);
+%Lambda_Results_OwnCode_TipLosses = Curves(Power_Curve_OwnCurve_TipLosses.CP, Power_Curve_OwnCurve_TipLosses.CQ, Power_Curve_OwnCurve_TipLosses.CT, Data,lambda,Plots);
+%Lambda_Results_BookCode = Curves(Book.Cp, Book.Cq, Book.Ct, Data, lambda, Plots);
+
+figure()
+hold on
+plot(Hansen_QB.lambda,Hansen_QB.Cp)
+%plot(Hansen.lambda,Power_Curve_OwnCurve_NoTipLosses.CP)
+%plot(Hansen.lambda,Power_Curve_OwnCurve_TipLosses.CP)
+plot(Cplambdavalidation(:,1),Cplambdavalidation(:,2))
+plot(Cplambdavalidation(:,1),Cplambdavalidation(:,4))
+legend('Hansen code','Hansen code - Tip Loss','Hansen code + Qblade - Tip Loss','Qblade','Qblade - tip losses')
+
+figure()
+hold on
+%plot(Hansen_TipLoss_QB.rad
+%plot(Hansen.lambda,Power_Curve_OwnCurve_NoTipLosses.CP)
+%plot(Hansen.lambda,Power_Curve_OwnCurve_TipLosses.CP)
+plot(Hansen_QB.rad,Hansen_QB.a(91,:));
+legend('Hansen code','Hansen code - Tip Loss','Hansen/Qblade code - Tip Loss')
 
